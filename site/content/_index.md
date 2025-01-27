@@ -1,5 +1,5 @@
 ---
-title: YERBA MATE ALBORADA
+title: ALBORADA
 subtitle: El sabor de un nuevo Amanecer
 image: img/flyer-fat.jpeg
 blurb:
@@ -9,7 +9,7 @@ blurb:
 intro:
   heading: INCORPORE ALBORADA
   text: >-
-    Con el tamaño de palos ideal y la cantidad de polvillo justa Un sabor meticulosamente diseñado para el deleite del consumidor Suave, sin lavarse rápido El sabor de un nuevo amanecer.
+    Con el tamaño de palos ideal y la cantidad de polvillo justa posee un sabor meticulosamente diseñado para el deleite del consumidor. Arbolada es una yerba suave que no se lava rápido.
 products:
   - image: img/producto-1.jpeg
     text: >-
