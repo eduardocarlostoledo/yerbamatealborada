@@ -1,0 +1,8 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Rm Mandados"
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[params]
+images = ["img/motos-dibujos.png"]
