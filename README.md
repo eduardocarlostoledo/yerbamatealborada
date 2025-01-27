@@ -86,7 +86,7 @@
   <p>Para usar un ícono llamado <code>icons-facebook.svg</code>, haz referencia al fragmento <code>social-icon</code> de Hugo de la siguiente manera:</p>
   <pre>
     <code>
-{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook" "alt" "RM en Facebook") }}
+{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook" "alt" "Alborada en Facebook") }}
     </code>
   </pre>
 </body>
@@ -142,5 +142,5 @@ Make sure you use consistent icons in terms of viewport and art direction for op
 For an icon named `icons-facebook.svg`, refer to the SVG `social-icon` partial like so:
 
 ```
-{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook" "alt" "RM on Facebook") }}
+{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook" "alt" "Alborada on Facebook") }}
 ```

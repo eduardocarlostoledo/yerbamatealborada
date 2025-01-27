@@ -1,6 +1,6 @@
 ---
 title: Valores
-image: img/producto-principal.jpeg
+image: img/header-flyer-fat.jpeg
 values: 
     - Fe y gratitud: Basamos nuestras acciones en la fe en Dios y Jesucristo, guiados por la gratitud hacia la vida y nuestro Creador.
     - Calidad: Nos esforzamos en ofrecer un producto meticulosamente diseñado, que refleje nuestra pasión y compromiso.
