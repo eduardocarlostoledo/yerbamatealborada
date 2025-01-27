@@ -1,50 +1,63 @@
 ---
-title: Nuestra Empresa
+title: Yerba Mate Alborada
 type: products
-image: img/rm-mandados-logo-telefono.png
+image: img/logo-alborada-corto.jpg
 intro:
-  heading: Que ofrecemos
+  heading: Yerba Mate Alborada 500 g
   description: >+
     
 
-    En RM MANDADOS, nos especializamos en facilitar tu vida. Somos una empresa de cadetería y mandados ubicada en Posadas, Misiones, Argentina, dedicada a realizar tus diligencias de manera rápida, confiable y eficiente.
+    Calidad superior, diseñada para tu deleite.
+Descubre el equilibrio perfecto entre tradición y sabor con nuestra yerba mate de 500 gramos, ideal para los amantes del buen mate.
+
+    Sabor único, suave y duradero, sin lavarse rápido.
+    Equilibrio ideal,con el tamaño perfecto de palos y la cantidad justa de polvillo.
+    Diseñada con dedicación, un producto meticulosamente elaborado para brindar una experiencia inigualable.
+
+
+    
+
+El sabor de un nuevo amanecer, ahora al alcance de tu mesa.
+¡Pedí la tuya hoy y experimentá el mate como nunca antes!
 
   blurbs:
-    - image: img/reshot-icon-delivery-on-bike-qkn7rgdu6p.svg
+    - image: img/flyer-fit-macecito-verde.jpeg
       text: >
-        🛵 Hacemos tus mandados: Desde trámites personales hasta la entrega de
-        productos, nos encargamos de todo.
-    - image: img/reshot-icon-order-delivery-pr96zlv7ay.svg
+        Presentación para revendedores   
+
+
+    - image: img/producto-principal.jpeg
       text: >
-        💳 Pagos de servicios: Nos ocupamos de que tus cuentas estén al día sin
-        que tengas que salir de casa.
-    - image: img/reshot-icon-delivery-protection-ks4zr2n9y7.svg
+        Un palet contiene, 105 packs de 10 unidades.
+        Precio por unidad, $1.097,74 (IVA incluido, sin flete).
+        
+    - image: img/producto-2-principal.jpeg
       text: >
-        🛍️ Compras en tiendas: ¿Necesitas algo del supermercado o de una tienda
-        local? Lo compramos por ti.
-    - image: img/reshot-icon-cash-on-delivery-mu97e26y8f.svg
-      text: >
-        📦 Delivery: Recibe lo que quieras, donde quieras, en el menor tiempo
-        posible.
+        Ideal para negocios, calidad y precio competitivo que destacan en el mercado.
 main:
-  heading: "Disponibilidad: Operamos todos los días de 8:00 a 00:00 horas para
-    estar siempre a tu disposición."
+  heading: "En Yerba Mate Alborada, cada mate es un nuevo comienzo."
   description: >-
     
-    Confianza y seguridad: Contamos con personal capacitado para manejar tus encargos con responsabilidad.
+    Somos una empresa comprometida con ofrecer una yerba mate de calidad superior que celebra la unión, la amistad y la gratitud. Inspirados por nuestra fe en Dios y Jesucristo, trabajamos con pasión para llevar a tu mesa un producto que simboliza el agradecimiento por la vida y la conexión entre las personas.
+
+Nuestra yerba mate se destaca por su equilibrio perfecto, un tamaño ideal de palo, la cantidad justa de polvillo y un sabor suave que no se lava rápido. Es el resultado de un proceso meticuloso que garantiza una experiencia única y duradera, diseñada para satisfacer a los paladares más exigentes.
+
+Además de ofrecer excelencia en cada paquete, nuestra misión es transmitir valores como la fe, la unión y la autenticidad. Desde el primer mate del día, buscamos acompañarte en cada amanecer, transformando momentos cotidianos en instantes llenos de significado.
+
+Con Alborada, no solo estás eligiendo una yerba mate, estás eligiendo calidad, tradición y un mensaje de esperanza.
+
+El sabor de un nuevo amanecer comienza aquí.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: img/movil-moto-rapido-paquete.png
+    image: img/sello-alborada.jpeg
   image2:
     alt: moto
-    image: img/cadete-donas.png
-  image3:
-    alt: moto
-    image: img/comida-cadete-pedidos-rm.png
+    image: img/matecito-blanco.jpeg
+
 testimonials: []
-full_image: img/rm-pagos-facturas.png
+full_image: img/logo-alborada.jpeg
 pricing:
-  heading: Rm
-  description: Mandados
+  heading: Yerba Mate
+  description: Alborada
   plans: []
 ---

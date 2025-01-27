@@ -1,49 +1,33 @@
 ---
-title: RM MANDADOS
-subtitle: Hacemos tus mandados
-image: img/comida-cadete-pedidos-rm.png
+title: YERBA MATE ALBORADA
+subtitle: El sabor de un nuevo Amanecer
+image: img/flyer-fat.jpeg
 blurb:
-  heading: Quiénes somos
+  heading: MARCANDO TENDENCIA EN EL MERCADO
   text: >-
-    En RM MANDADOS nos especializamos en facilitar tu vida. Somos una empresa de
-    cadetería y mandados ubicada en Posadas, Misiones, Argentina, dedicada a
-    realizar tus diligencias de manera rápida, confiable y eficiente.
-
-    Nuestra misión es ser el nexo que conecta tus necesidades diarias con soluciones prácticas, ofreciéndote más tiempo para lo que realmente importa.
+    Alborada simboliza un nuevo amanecer para quienes deciden todos los días, con la sencillez de un mate, desde el amor, la amistad, la unión y el compartir, mostrarse agradecidos a la vida y al Creador desde la primera luz del alba.
 intro:
-  heading: Qué hacemos
+  heading: INCORPORE LA YERBA MATE QUE ESTA MARCANDO TENDENCIA EN EL MERCADO
+
+
   text: >-
-    🛵 Hacemos tus mandados: Desde trámites personales hasta la entrega de
-    productos, nos encargamos de todo.
-
-    💳 Pagos de servicios: Nos ocupamos de que tus cuentas estén al día sin que tengas que salir de casa.
-
-    🛍️ Compras en tiendas: ¿Necesitas algo del supermercado o de una tienda local? Lo compramos por ti.
-
-    📦 Delivery: Recibe lo que quieras, donde quieras, en el menor tiempo posible.
+    Con el tamaño de palos ideal y la cantidad de polvillo justa Un sabor meticulosamente diseñado para el deleite del consumidor Suave, sin lavarse rápido El sabor de un nuevo amanecer.
 products:
-  - image: img/reshot-icon-scooter-delivery-uc2x3qsbp4.svg
+  - image: img/producto-1.jpeg
     text: >-
-      Nuestra misión: 
+      Calidad superior que destaca
+      Precio competitivo que convence
 
-
-      Brindar soluciones rápidas, confiables y personalizadas para satisfacer las necesidades de nuestros clientes, haciendo que sus actividades diarias sean más simples y libres de estrés.
-  - image: img/reshot-icon-tracking-delivery-ta5z9nd7q2.svg
+      
+  - image: img/producto-2.jpeg
     text: >-
-      Nuestra visión: 
+      Presentación: 500gr
 
+      Un Palet es igual a: 105 packs de 10 Unidades
 
-      Ser la empresa líder en mandados y servicios de delivery en Posadas y la región, destacándonos por nuestra calidad, eficiencia y compromiso con la satisfacción del cliente.
+      Precio Revendedor por unidad (IVA incluido, sin flete): $1.097,74
 values:
-  heading: Nuestros Valores
+  heading: Nuestra Visión
   text: >-
-    Responsabilidad: Tratamos cada mandado como propio.
-
-    Compromiso: Brindamos un servicio de excelencia, ajustado a tus necesidades.
-
-    Eficiencia: Hacemos que cada encargo sea rápido y seguro.
-
-    Empatía: Escuchamos y entendemos lo que necesitas para ofrecerte soluciones prácticas.
-
-    Innovación: Utilizamos las mejores herramientas y estrategias para optimizar tu experiencia.
+    Convertirnos en una marca líder en el mercado de la yerba mate, reconocida no solo por la calidad de nuestros productos, sino también por promover valores fundamentales como la fe, la unión y el compartir. Queremos ser el puente que une a las personas, marcando tendencia en el mercado y dejando una huella positiva en la vida de nuestros consumidores.
 ---

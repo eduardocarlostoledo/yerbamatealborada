@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Rm Mandados"
+title = "Yerba Mate Alborada"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
