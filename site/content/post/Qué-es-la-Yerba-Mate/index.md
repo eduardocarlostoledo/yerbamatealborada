@@ -1,9 +1,9 @@
 ---
-title: ¿Qué es la yerba mate?
-date: 2025-01-09T14:26:59.855Z
+title: "¿Qué es la yerba mate?"
+date: "2025-01-09T14:26:59.855Z"
 description: |
   Lectura de Interés
-image: header-9.jpg
+image: "header-9.jpg"
 ---
 
 Una breve historia de la yerba mate
