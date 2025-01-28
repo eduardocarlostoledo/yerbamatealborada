@@ -55,20 +55,26 @@ pricing:
         - One or two varieties of beans
       plan: 
       price: 
-   - description: Distribuidor
+      link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20revendedor!"
+
+    - description: Distribuidor
       items:
         - 3 lbs of coffee per month
         - Green or roasted beans
         - One or two varieties of beans
       plan: 
       price: 
-   - description: Representante
+      link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20distribuidor!"
+
+    - description: Representante
       items:
         - 6 lbs of coffee per month
         - Green or roasted beans
         - Up to 4 different varieties of beans
       plan: 
       price: 
+      link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20representante!"
+
     - description: Mayorista
       items:
         - Whatever you need
@@ -76,4 +82,5 @@ pricing:
         - Unlimited varieties
       plan: 
       price: 
+      link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20mayorista!"
 ---
