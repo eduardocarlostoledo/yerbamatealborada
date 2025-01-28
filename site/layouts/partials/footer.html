@@ -35,35 +35,24 @@
 
 			<div>
 				<h3 class="f4 b lh-title mb2 primary">Redes Sociales</h3>
+
 				<ul class="mhn2">
-					<li>
-					  <a href="https://wa.me/543765042085" target="_blank" title="Alborada on WhatsApp">
-						<img src="/site/assets/img/whatsapp-svgrepo-com.svg" alt="Alborada on WhatsApp" width="16" height="16">
-					  </a>
-					</li>
-					<li>
-					  <a href="https://www.instagram.com/yerbamatealborada/" target="_blank" title="Alborada on Instagram">
-						<img src="/site/assets/img/icons-instagram.svg" alt="Alborada on Instagram" width="16" height="16">
-					  </a>
-					</li>
-					<li>
-					  <a href="mailto:alboradayerbamate@gmail.com" target="_blank" title="Contact Alborada via Email">
-						<img src="/site/assets/img/email-svgrepo-com.svg" alt="Contact Alborada via Email" width="16" height="16">
-					  </a>
-					</li>
-					<li>
-					  <a href="https://www.google.com/maps/d/u/0/viewer?usp=sharing&fbclid=PAZXh0bgNhZW0CMTEAAaY6BmVCizQhMEKn_1Xa-K1PEPIB08NwjCFu7v6FtWh11KPknl9ZRUtdlKE_aem_SUWxizoHl14UVafu3VHCvg&mid=1i6_KbhPl3Wwqpjs2EjCRjBzHdAgMzaE" target="_blank" title="Find Alborada Products on Google Maps">
-						<img src="/site/assets/img/google-maps-alt-svgrepo-com.svg" alt="Find Alborada Products on Google Maps" width="16" height="16">
-					  </a>
-					</li>
-				  </ul>
-				  
-				
-				
+					{{ partial "social-icon" (dict "link" "https://wa.me/543765042085" "svg" "icons-whatsapp" "alt"
+					"Whatsapp") }}
+					{{ partial "social-icon" (dict "link" "mailto:alboradayerbamate@gmail.com" "svg" "icons-email" "alt"
+					"Email") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram" "alt" "Instagram") }}
+					{{ partial "social-icon" (dict "link"
+					"https://www.google.com/maps/d/u/0/viewer?usp=sharing&fbclid=PAZXh0bgNhZW0CMTEAAaY6BmVCizQhMEKn_1Xa-K1PEPIB08NwjCFu7v6FtWh11KPknl9ZRUtdlKE_aem_SUWxizoHl14UVafu3VHCvg&mid=1i6_KbhPl3Wwqpjs2EjCRjBzHdAgMzaE"
+					"svg" "google-maps-alt-svgrepo-com" "alt" "Maps") }}
+				</ul>
+
+
+
+
 			</div>
 
 		</div>
 	</div>
 
 </footer>
-
