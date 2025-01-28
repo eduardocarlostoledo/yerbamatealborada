@@ -9,7 +9,6 @@ blurb:
 intro:
   heading:
   text: >-
-    Arbolada es una yerba suave que no se lava rápido.
 products:
   - image: img/producto-principal.jpeg
     text: >-

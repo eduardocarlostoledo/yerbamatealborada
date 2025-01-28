@@ -30,7 +30,7 @@ export default class HomePreview extends React.Component {
           </div>
 
           <div className="tc">
-            <a href="#" className="btn raise">Nosotros</a>
+            <a href="#" className="btn raise">Productos</a>
           </div>
         </div>
       </div>
