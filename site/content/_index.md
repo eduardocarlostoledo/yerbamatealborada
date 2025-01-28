@@ -1,7 +1,7 @@
 ---
 title:
 subtitle:
-image: img/header-home.jpeg
+image: img/header-home.jpg
 blurb:
   heading: TENDENCIA EN EL MERCADO
   text: >-
