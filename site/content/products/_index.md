@@ -27,39 +27,39 @@ pricing:
   heading: Venda Yerba Mate Alborada
   description: Sea parte de nuestra red de Revendedores, Distribuidores, Representantes y Mayoristas
   plans:
-    - description: Revendedor
-      items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans
-        - One or two varieties of beans
-      plan:
-      price:
-      link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20revendedor!"
-
-    - description: Distribuidor
-      items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans
-        - One or two varieties of beans
-      plan:
-      price:
-      link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20distribuidor!"
-
     - description: Representante
       items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
+        - Buscamos Representantes
+        - Contactános para ser representantes de ventas de tu provincia o zona
+        - Disponibilidad de zonas para representación
+        - Se ofrece exclusividad y comisión
+        - Consulte para representar su zona
       plan:
       price:
       link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20representante!"
+    - description: Distribuidor
+      items:
+        - Stokeas y Almacenas tu mercaderia
+        - Fuerza de venta propia, Clientela propia
+        - Venta por pack, Adquiere por Pallet        
+      plan:
+      price:
+      link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20distribuidor!"   
     - description: Mayorista
       items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
+        - Stokeas y Almacenas tu mercaderia
+        - Clientela propia, venta por pack
+        - Adquiere por Pallet
       plan:
       price:
       link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20mayorista!"
+    - description: Revendedor
+      items:
+        - Stokeas y Almacenas tu mercaderia
+        - Clientela propia, venta por pack
+        - Adquiere por Bultos
+      plan:
+      price:
+      link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20revendedor!"    
 ---
 <a> {" "} </a>
