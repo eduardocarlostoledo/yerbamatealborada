@@ -1,7 +1,7 @@
 ---
 title:
 subtitle:
-image: img/flyer-fat.jpeg
+image: img/header-home.jpeg
 blurb:
   heading: TENDENCIA EN EL MERCADO
   text: >-

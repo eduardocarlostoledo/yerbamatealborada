@@ -1,5 +1,5 @@
 ---
-title: "Valores"
+title: 
 image: img/header-flyer-fat.jpeg
 values:
   - heading: "Yerba Mate"
@@ -13,5 +13,8 @@ values:
   - heading: "Cultivo sostenible"
     text: >
       El cultivo sostenible de yerba mate considera tanto el medio ambiente como el bienestar de las comunidades locales. Mediante prácticas como la conservación del suelo, el uso responsable del agua y la reforestación, promovemos una agricultura regenerativa que protege los recursos naturales. Además, el cultivo de yerba mate fomenta la economía local, generando empleos y fortaleciendo el arraigo cultural en las regiones productoras.
-    imageUrl: "/imgflyer-fit-macecito-verde.jpeg"  
+    imageUrl: "/imgflyer-fit-macecito-verde.jpeg"
+  - heading:
+    text: >
+    imageUrl: "/img/matecito-blanco.jpeg"
 ---

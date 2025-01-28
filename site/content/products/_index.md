@@ -1,9 +1,9 @@
 ---
-title: Yerba Mate Alborada
+title:
 type: products
 image: img/header.jpg
 intro:
-  heading: Yerba Mate Alborada
+  heading: 
   description: >
     Calidad superior, diseñada para tu deleite.
     Descubre el equilibrio perfecto entre tradición y sabor con nuestra yerba mate de 500 gramos, ideal para los amantes del buen mate.

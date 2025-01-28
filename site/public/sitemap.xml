@@ -11,10 +11,10 @@
     <loc>//localhost:1313/post/</loc>
     <lastmod>2025-01-09T14:26:59+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/contact/</loc>
+    <loc>//localhost:1313/products/</loc>
   </url><url>
     <loc>//localhost:1313/values/</loc>
   </url><url>
-    <loc>//localhost:1313/products/</loc>
+    <loc>//localhost:1313/contact/</loc>
   </url>
 </urlset>
