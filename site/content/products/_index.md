@@ -1,7 +1,7 @@
 ---
 title:
 type: products
-image: img/header.jpg
+image: img/header-main.png
 intro:
   heading: 
   description: >
@@ -43,9 +43,37 @@ main:
     alt: moto
     image: img/matecito-blanco.jpeg
 testimonials: []
-full_image: img/logo-alborada.jpeg
+full_image: 
 pricing:
-  heading: Yerba Mate
-  description: Alborada
-  plans: []
+  heading: Venda Yerba Mate Alborada
+  description: Sea parte de nuestra red de Revendedores, Distribuidores, Representantes y Mayoristas
+  plans:
+    - description: Revendedor
+      items:
+        - 3 lbs of coffee per month
+        - Green or roasted beans
+        - One or two varieties of beans
+      plan: 
+      price: 
+   - description: Distribuidor
+      items:
+        - 3 lbs of coffee per month
+        - Green or roasted beans
+        - One or two varieties of beans
+      plan: 
+      price: 
+   - description: Representante
+      items:
+        - 6 lbs of coffee per month
+        - Green or roasted beans
+        - Up to 4 different varieties of beans
+      plan: 
+      price: 
+    - description: Mayorista
+      items:
+        - Whatever you need
+        - Green or roasted beans
+        - Unlimited varieties
+      plan: 
+      price: 
 ---

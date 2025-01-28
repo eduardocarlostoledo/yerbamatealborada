@@ -1,6 +1,6 @@
 ---
 title: Contacto
-logo: img/logo.jpg
+logo: img/header-main.png
 contact_entries:
   - heading: Ubicación
     text: Av. Chacabuco 5963, N3300 Posadas, Misiones.

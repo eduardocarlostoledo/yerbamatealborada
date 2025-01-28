@@ -1,6 +1,6 @@
 ---
 title: 
-image: img/header-flyer-fat.jpeg
+image: img/header-main.png
 values:
   - heading: "Yerba Mate"
     text: >
