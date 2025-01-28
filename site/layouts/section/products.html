@@ -28,34 +28,37 @@
 
 {{ partial "table" .Params.pricing }}
 
-<table>
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Detalles</th>
-      <th>Acción</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{ range .Params.pricing.plans }}
-    <tr>
-      <td>{{ .description }}</td>
-      <td>
-        <ul>
-          {{ range .items }}
-          <li>{{ . }}</li>
-          {{ end }}
-        </ul>
-      </td>
-      <td>
-        <a href="{{ .link }}" target="_blank" class="btn btn-primary">
-          Contáctanos
-        </a>
-      </td>
-    </tr>
-    {{ end }}
-  </tbody>
-</table>
+<div class="mw7 center mb5">
+  <table class="center w-100">
+    <thead>
+      <tr>
+        <th>Descripción</th>
+        <th>Detalles</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Params.pricing.plans }}
+      <tr>
+        <td>{{ .description }}</td>
+        <td>
+          <ul>
+            {{ range .items }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </td>
+        <td>
+          <a href="{{ .link }}" target="_blank" class="btn btn-primary">
+            Contáctanos
+          </a>
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+
 
 
 {{ end }}

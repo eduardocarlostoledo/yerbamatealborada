@@ -17,33 +17,12 @@ intro:
         Disfruta de la mejor yerba mate con un sabor único y duradero.
     - image: img/producto-2.jpeg
       text: >
-        Calidad superior en cada sorbo, diseñada para tu deleite.
-    - image: img/producto-2-principal.jpeg
-      text: >
-        El equilibrio perfecto entre tradición y sabor.
+        Calidad superior en cada sorbo, diseñada para tu deleite.    
     - image: img/producto-call-to-action.jpeg
       text: >
         Únete a la experiencia Alborada y transforma tus momentos cotidianos.
-main:
-  heading: "En Yerba Mate Alborada, cada mate es un nuevo comienzo."
-  description: >
-    Somos una empresa comprometida con ofrecer una yerba mate de calidad superior que celebra la unión, la amistad y la gratitud. Inspirados por nuestra fe en Dios y Jesucristo, trabajamos con pasión para llevar a tu mesa un producto que simboliza el agradecimiento por la vida y la conexión entre las personas.
-
-    Nuestra yerba mate se destaca por su equilibrio perfecto, un tamaño ideal de palo, la cantidad justa de polvillo y un sabor suave que no se lava rápido. Es el resultado de un proceso meticuloso que garantiza una experiencia única y duradera, diseñada para satisfacer a los paladares más exigentes.
-
-    Además de ofrecer excelencia en cada paquete, nuestra misión es transmitir valores como la fe, la unión y la autenticidad. Desde el primer mate del día, buscamos acompañarte en cada amanecer, transformando momentos cotidianos en instantes llenos de significado.
-
-    Con Alborada, no solo estás eligiendo una yerba mate, estás eligiendo calidad, tradición y un mensaje de esperanza.
-
-    El sabor de un nuevo amanecer comienza aquí.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: img/sello-alborada.jpeg
-  image2:
-    alt: moto
-    image: img/matecito-blanco.jpeg
 testimonials: []
-full_image: 
+full_image:
 pricing:
   heading: Venda Yerba Mate Alborada
   description: Sea parte de nuestra red de Revendedores, Distribuidores, Representantes y Mayoristas
@@ -53,8 +32,8 @@ pricing:
         - 3 lbs of coffee per month
         - Green or roasted beans
         - One or two varieties of beans
-      plan: 
-      price: 
+      plan:
+      price:
       link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20revendedor!"
 
     - description: Distribuidor
@@ -62,8 +41,8 @@ pricing:
         - 3 lbs of coffee per month
         - Green or roasted beans
         - One or two varieties of beans
-      plan: 
-      price: 
+      plan:
+      price:
       link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20distribuidor!"
 
     - description: Representante
@@ -71,16 +50,16 @@ pricing:
         - 6 lbs of coffee per month
         - Green or roasted beans
         - Up to 4 different varieties of beans
-      plan: 
-      price: 
+      plan:
+      price:
       link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20representante!"
-
     - description: Mayorista
       items:
         - Whatever you need
         - Green or roasted beans
         - Unlimited varieties
-      plan: 
-      price: 
+      plan:
+      price:
       link: "https://wa.me/543765042085?text=Hola,%20quiero%20más%20información%20deseo%20ser%20mayorista!"
 ---
+<a> {" "} </a>
