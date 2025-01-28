@@ -1,6 +1,6 @@
 ---
-title: ALBORADA
-subtitle: El sabor de un nuevo Amanecer
+title:
+subtitle:
 image: img/flyer-fat.jpeg
 blurb:
   heading: TENDENCIA EN EL MERCADO
@@ -19,7 +19,7 @@ products:
       Presentación: 500gr. Un Palet es igual a: 105 packs de 10 Unidades.      
   - image: img/producto-call-to-action.jpeg
     text: >-
-      Precio Revendedor por unidad (IVA incluido, sin flete): $1.097,74
+      Precio Revendedor por unidad (IVA incluido, sin flete): Consultar
 values:
   heading: Nuestra Visión
   text: >-
