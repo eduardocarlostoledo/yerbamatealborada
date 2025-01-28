@@ -3,15 +3,16 @@ title:
 image: img/header-main.png
 values:
   - heading: "Yerba Mate"
-    text: >
-      La yerba mate "*Ilex paraguariensis" es una planta nativa de la región subtropical de Sudamérica, que incluye zonas de Argentina, Paraguay y Brasil. En su entorno natural, crece en la zona de Paraguay, Sur de Brasil, Misiones y Corrientes, lo que reproduce las condiciones ideales para su desarrollo.
+    text: >      
+      Alborada representa un nuevo comienzo para quienes, con la sencillez de un mate, celebran cada día valores como el amor, la amistad, la unión y la gratitud. Inspirados por la primera luz del alba, compartimos una yerba mate meticulosamente diseñada para el deleite del consumidor, con un equilibrio perfecto entre tradición y calidad.
     imageUrl: "/img/matecito-blanco.jpeg"
-  - heading: "Origen único y trazabilidad"
+  - heading: "Origen"
     text: >
-      La yerba mate de origen único se cultiva en una región geográfica específica, asegurando un perfil de sabor distintivo. En el caso de Yerba Mate Alborada, nuestras plantaciones están localizadas en la provincia de Misiones, Argentina, conocida por su clima húmedo y suelos ricos en nutrientes que potencian la calidad del producto. Esta trazabilidad garantiza una experiencia auténtica y un control estricto en cada etapa de su producción.
-    imageUrl: "/img/sello-azul-alborada.jpeg"
-  - heading: "Cultivo sostenible"
-    text: >
-      El cultivo sostenible de yerba mate considera tanto el medio ambiente como el bienestar de las comunidades locales. Mediante prácticas como la conservación del suelo, el uso responsable del agua y la reforestación, promovemos una agricultura regenerativa que protege los recursos naturales. Además, el cultivo de yerba mate fomenta la economía local, generando empleos y fortaleciendo el arraigo cultural en las regiones productoras.
-    imageUrl: "/img/flyer-fit-macecito-verde.jpeg"
+      Elaborada con palo, Alborada es sinónimo de sabor auténtico y dedicación.
+      "Producción: Jecof SRL, Capitán Krause 9651."
+      "Domicilio comercial: Av. Chacabuco 5963, Posadas, Misiones."
+      "Elaboración: Cooperativa de Trabajo La Hoja Ltda."
+      "Registros: RNPA 14266495 | RNE 140116."
+      Descubre en cada sorbo el sabor único de Alborada y transforma tus momentos cotidianos en instantes significativos.
+    imageUrl: "/img/sello-azul-alborada.jpeg"  
 ---
