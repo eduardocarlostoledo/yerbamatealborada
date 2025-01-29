@@ -1,20 +1,19 @@
 <head>
+	<meta name="generator" content="Hugo 0.142.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
-  <title>{{ .Title }} | {{ $.Site.Title }}</title>
+  <title> Yerba Mate Alborada - La mejor yerba mate de Misiones </title>
 
-  {{ $stylesheet := .Site.Data.webpack.main }}
-  {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
-  {{ end }}
+  
+  
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="{{ $.Site.BaseURL }}">
+  <base href="http://yerbamatealborada.com/">
 
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 
-	<!-- Favicons -->
+	
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
@@ -22,10 +21,67 @@
 	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
 	<meta name="theme-color" content="#fff">
 
-  <!-- Open Graph Hugo https://gohugo.io/templates/internal/#open-graph -->
-  {{ template "_internal/opengraph.html" . }}
+  
+  <meta property="og:url" content="https://yerbamatealborada.com/">
+  <meta property="og:site_name" content="Yerba Mate Alborada">
+  <meta property="og:title" content="Yerba Mate Alborada">
+  <meta property="og:locale" content="en_es">
+  <meta property="og:type" content="website">    
 
-  {{ if .IsHome }}
+	<link rel="canonical" href="https://yerbamatealboarda.com/" />
+	<link rel="next" href="https://yerbamatealborada.com/products/">
+	<meta name="description" content="Yerba Mate Alborada. Calidad, Sabor, Precio Competitivo, Tendencia en el mercado. Venta al por mayor de yerba mate. Yerba Mate de Misiones" />
+	<meta property="og:title" content="Yerba Mate - Alborada" />
+	<meta property="og:description" content="Yerba Mate elaborada con palo. Origen Misiones. La mejor infusión para tu día." />
+	<meta property="og:image" content="https://yerbamatealborada.com/images/header.jpg" />
+	<meta property="og:url" content="https://yerbamatealborada.com/" />
+	<meta name="twitter:card" content="summary_large_image" />
+	
+  
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {{ end }}
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [
+			{
+			  "@type": "ListItem",
+			  "position": 1,
+			  "name": "Inicio",
+			  "item": "https://yerbamatealborada.com/"
+			},
+			{
+			  "@type": "ListItem",
+			  "position": 2,
+			  "name": "Tienda",
+			  "item": "https://yerbamatealborada.com/productos/"
+			}
+		  ]
+		}
+		</script>
+		
+		<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "WebSite",
+			  "url": "https://yerbamatealborada.com/",
+			  "name": "Yerba Mate Alborada",
+			  "description": "La mejor yerba mate con calidad garantizada. Tradición y sabor en cada sorbo.",
+			  "publisher": {
+				"@type": "Organization",
+				"name": "Yerba Mate Alborada",
+				"logo": {
+				  "@type": "ImageObject",
+				  "url": "https://yerbamatealborada.com/images/logo.jpg"
+				}
+			  },
+			  "potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://yerbamatealborada.com/?s={search_term_string}",
+				"query-input": "required name=search_term_string"
+			  }
+			}
+			</script>
+			
+  
 </head>
