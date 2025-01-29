@@ -1,20 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2025-01-09T14:26:59+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/qu%C3%A9-es-la-yerba-mate/</loc>
-    <lastmod>2025-01-09T14:26:59+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/</loc>
-    <lastmod>2025-01-09T14:26:59+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/products/</loc>
-  </url><url>
-    <loc>//localhost:1313/values/</loc>
-  </url><url>
-    <loc>//localhost:1313/contact/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://yerbamatealborada.com/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://yerbamatealborada.com/productos/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yerbamatealborada.com/contact/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://yerbamatealborada.com/post/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://yerbamatealborada.com/post/qu%C3%A9-es-la-yerba-mate/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>0.6</priority>
+    </url>
 </urlset>
