@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /contact/
+Allow: /
+Sitemap: https://www.yerbamatealborada.com/sitemap.xml
