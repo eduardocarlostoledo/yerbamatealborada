@@ -1,19 +1,20 @@
 <head>
-	<meta name="generator" content="Hugo 0.142.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
-  <title> Yerba Mate Alborada - La mejor yerba mate de Misiones </title>
+  <title>{{ .Title }} | {{ $.Site.Title }}</title>
 
-  
-  
+  {{ $stylesheet := .Site.Data.webpack.main }}
+  {{ with $stylesheet.css }}
+    <link href="{{ relURL . }}" rel="stylesheet">
+  {{ end }}
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="http://yerbamatealborada.com/">
+  <base href="{{ $.Site.BaseURL }}">
 
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 
-	
+	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
@@ -82,6 +83,11 @@
 			  }
 			}
 			</script>
-			
-  
+
+  <!-- Open Graph Hugo https://gohugo.io/templates/internal/#open-graph -->
+  {{ template "_internal/opengraph.html" . }}
+
+  {{ if .IsHome }}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {{ end }}
 </head>
