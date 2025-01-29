@@ -7,7 +7,7 @@ contact_entries:
   - heading: 📞 Tel.
     text: "3765042085"
   - heading: ✉️ Email
-    text: "alboradayerbamate@gmail.com"
+    text: "ventas@yerbamatealborada.com"
 ---
 
 
