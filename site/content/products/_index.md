@@ -30,7 +30,7 @@ pricing:
     - description: Representante
       items:
         - Buscamos Representantes
-        - Contactános para ser representantes de ventas de tu provincia o zona
+        - Contactános para ser representante de ventas de tu provincia o zona
         - Disponibilidad de zonas para representación
         - Se ofrece exclusividad y comisión
         - Consulte para representar su zona
