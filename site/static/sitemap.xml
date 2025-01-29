@@ -5,4 +5,24 @@
         <lastmod>2025-01-29</lastmod>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://yerbamatealborada.com/productos/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://yerbamatealborada.com/contact/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://yerbamatealborada.com/post/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://yerbamatealborada.com/post/qu%C3%A9-es-la-yerba-mate/</loc>
+        <lastmod>2025-01-29</lastmod>
+        <priority>0.6</priority>
+    </url>
 </urlset>
