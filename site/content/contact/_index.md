@@ -2,8 +2,6 @@
 title: Contacto
 logo: img/header-main.png
 contact_entries:
-  - heading: Tel.
-    text: "3765042085"
   - heading: Email
     text: ventas@yerbamatealborada.com
 ---
@@ -11,6 +9,8 @@ contact_entries:
 
 Utiliza los siguientes medios de contacto para cualquier consulta sobre nuestros productos. Estamos aquí para asistirte:
 
-Habla con un Asesor 💬 WhatsApp https://wa.me/543765042085\
+Habla con un Asesor [💬 WhatsApp](https://wa.me/543765042085) https://wa.me/543765042085\
 \
 Ubicación Av. Chacabuco 5963, N3300 Posadas, Misiones.
+
+Teléfono: 3765042085
