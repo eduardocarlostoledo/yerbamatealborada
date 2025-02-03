@@ -4,9 +4,9 @@ logo: img/header-main.png
 contact_entries:
   - heading: Ubicación
     text: " Av. Chacabuco 5963, N3300 Posadas, Misiones. "
-  - heading: 📞 Tel.
-    text: -3765042085-
-  - heading: ✉️ Email
+  - heading: Tel.
+    text: "3765042085"
+  - heading: Email
     text: ventas@yerbamatealborada.com
 ---
 
