@@ -10,10 +10,10 @@ intro:
   heading:
   text: >-
 products:
-  - image: img/producto-principal.jpeg
+  - image: img/producto-principal.png
     text: >-
       Calidad superior que destaca.
-  - image: img/producto-2-principal.jpeg
+  - image: img/producto-2-principal.png
     text: >-
       Precio competitivo que convence.
 ---
