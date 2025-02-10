@@ -18,7 +18,7 @@ export default class HomePreview extends React.Component {
       </div>
 
       <div className="bg-off-white pv4">
-        <div className="ph3 mw7 center">
+        <div className="ph3 mw7 center tc">
           <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "intro", "heading"])}</h2>
           <p className="mb4 mw6">{entry.getIn(["data", "intro", "text"])}</p>
 
@@ -36,7 +36,7 @@ export default class HomePreview extends React.Component {
       </div>
 
       <div className="bg-grey-1 pv4">
-        <div className="ph3 mw7 center">
+        <div className="ph3 mw7 center tc">
 
           <div className="flex-l mhn2-l">
             <div className="w-40-l ph2-l">
