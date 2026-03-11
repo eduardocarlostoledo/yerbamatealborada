@@ -1,0 +1,35 @@
+# Yarn
+.yarn/
+yarn-error.log
+
+# npm
+node_modules/
+npm-debug.log
+npm-error.log
+.npm
+
+# vite
+dist/
+.vite
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+*.tsbuildinfo
+
+# IDE
+.history
+
+# OS
+Thumbs.db

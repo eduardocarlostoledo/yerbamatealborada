@@ -1,0 +1,144 @@
+/* Contact Page */
+
+.contact-page {
+  width: 100%;
+}
+
+.contact-content {
+  padding: var(--spacing-xl) 0;
+  background-color: white;
+}
+
+.contact-content .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-logo {
+  height: 80px;
+  margin-bottom: var(--spacing-lg);
+  object-fit: contain;
+}
+
+.contact-entries {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.contact-entry {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-md);
+}
+
+.contact-entry:last-child {
+  border-bottom: none;
+}
+
+.contact-entry label {
+  font-weight: 700;
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.95rem;
+}
+
+.contact-entry a,
+.contact-entry p {
+  color: var(--text-dark);
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.contact-entry a:hover {
+  color: var(--primary-color);
+}
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-wrapper h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.additional-contact {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.additional-contact h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.social-button {
+  display: inline-block;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.social-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 80, 22, 0.15);
+}
+
+.social-button.whatsapp {
+  background-color: #25d366;
+}
+
+.social-button.whatsapp:hover {
+  background-color: #1fa853;
+}
+
+.social-button.instagram {
+  background-color: #e4405f;
+}
+
+.social-button.instagram:hover {
+  background-color: #d03860;
+}
+
+.social-button.maps {
+  background-color: #ea4335;
+}
+
+.social-button.maps:hover {
+  background-color: #c5221f;
+}
+
+@media (max-width: 768px) {
+  .contact-content .container {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-button {
+    width: 100%;
+  }
+}
