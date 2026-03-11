@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import '../css/header.css'
 
 export default function Header() {
@@ -14,47 +13,51 @@ export default function Header() {
   }
 
   return (
-    <header className="header">
-      <nav className="navbar">
-        <div className="nav-container">
-          <Link to="/" className="logo">
-            <img src="/img/logo.png" alt="Yerba Mate Alborada" />
-          </Link>
-
-          <button 
-            className="hamburger" 
-            onClick={toggleMobileMenu}
-            aria-label="Toggle menu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
-            <li className="nav-item">
-              <Link to="/products" className="nav-link" onClick={closeMobileMenu}>
-                Productos
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/values" className="nav-link" onClick={closeMobileMenu}>
-                Acerca de
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/post" className="nav-link" onClick={closeMobileMenu}>
-                Blog
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={closeMobileMenu}>
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <nav className="nav">
+      <a href="#" className="nav-logo">
+        <img src="/img/logo-alborada-corto.jpg" alt="Yerba Mate Alborada" />
+        <span>Alborada</span>
+      </a>
+      <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
+        <li>
+          <a href="#solution" onClick={closeMobileMenu}>
+            Producto
+          </a>
+        </li>
+        <li>
+          <a href="#benefits" onClick={closeMobileMenu}>
+            Beneficios
+          </a>
+        </li>
+        <li>
+          <a href="#resellers" onClick={closeMobileMenu}>
+            Revendedores
+          </a>
+        </li>
+        <li>
+          <a href="#faq" onClick={closeMobileMenu}>
+            Preguntas
+          </a>
+        </li>
+        <li>
+          <a href="/post" onClick={closeMobileMenu}>
+            Blog
+          </a>
+        </li>
+      </ul>
+      <a
+        href="https://wa.me/543765042085"
+        className="nav-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Contactar
+      </a>
+      <div className="nav-hamburger" onClick={toggleMobileMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
   )
 }

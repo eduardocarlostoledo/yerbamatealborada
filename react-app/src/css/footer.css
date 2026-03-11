@@ -1,52 +1,186 @@
-/* Footer Styles */
-
-.footer {
-  background-color: var(--primary-dark);
-  color: white;
-  padding: var(--spacing-xl) 0 var(--spacing-lg);
-  margin-top: var(--spacing-xl);
+/* ─── FOOTER ──────────────────────────────────────────── */
+footer {
+  background: #0f2211;
+  padding: 4rem 5% 2rem;
 }
 
-.footer-container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+.footer-top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--spacing-xl);
-  margin-bottom: var(--spacing-xl);
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(245, 240, 232, 0.08);
 }
 
-.footer-section h3 {
-  color: var(--accent-color);
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-md);
+.footer-brand img {
+  height: 50px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
-.footer-section ul {
+.footer-brand p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(245, 240, 232, 0.45);
+  max-width: 300px;
+  margin-bottom: 1.4rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(245, 240, 232, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(245, 240, 232, 0.5);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.social-btn:hover {
+  border-color: var(--dorado);
+  color: var(--dorado);
+}
+
+.footer-col h5 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dorado-claro);
+  margin-bottom: 1.2rem;
+}
+
+.footer-col ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 
-.footer-section li {
-  margin-bottom: var(--spacing-sm);
+.footer-col ul li a {
+  font-size: 0.88rem;
+  color: rgba(245, 240, 232, 0.45);
+  text-decoration: none;
+  transition: color 0.25s;
 }
 
-.footer-section a {
-  color: white;
-  transition: color var(--transition-normal);
+.footer-col ul li a:hover {
+  color: var(--crema);
 }
 
-.footer-section a:hover {
-  color: var(--accent-color);
+.footer-col .contact-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: rgba(245, 240, 232, 0.45);
+  margin-bottom: 0.7rem;
+}
+
+.footer-col .contact-line a {
+  color: rgba(245, 240, 232, 0.45);
+}
+
+.newsletter {
+  font-size: 0.88rem;
+  color: rgba(245, 240, 232, 0.45);
 }
 
 .newsletter-form {
   display: flex;
-  gap: var(--spacing-sm);
-  margin-top: var(--spacing-md);
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.newsletter-form input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(245, 240, 232, 0.15);
+  border-radius: 2px;
+  background: rgba(245, 240, 232, 0.05);
+  color: rgba(245, 240, 232, 0.8);
+  font-size: 0.85rem;
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(245, 240, 232, 0.3);
+}
+
+.newsletter-form button {
+  padding: 0.6rem 1rem;
+  background: var(--dorado);
+  color: var(--verde-selva);
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.newsletter-form button:hover {
+  background: var(--dorado-claro);
+}
+
+.footer-bottom {
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: rgba(245, 240, 232, 0.3);
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal a {
+  font-size: 0.8rem;
+  color: rgba(245, 240, 232, 0.3);
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  color: rgba(245, 240, 232, 0.6);
+}
+
+.footer-province {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: rgba(245, 240, 232, 0.25);
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 }
 
 .newsletter-form input {

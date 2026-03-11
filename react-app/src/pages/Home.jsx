@@ -4,7 +4,7 @@ import TrustBar from '../components/TrustBar'
 import Problem from '../components/Problem'
 import Solution from '../components/Solution'
 import HowToPrepare from '../components/HowToPrepare'
-import Testimonial from '../components/Testimonial'
+import Testimonials from '../components/Testimonials'
 import Resellers from '../components/Resellers'
 import FAQ from '../components/FAQ'
 import CTA from '../components/CTA'
@@ -64,6 +64,7 @@ export default function Home() {
         </div>
       </section>
 
+      <Testimonials />
       <Resellers />
       <FAQ />
       <CTA />

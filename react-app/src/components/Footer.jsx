@@ -1,86 +1,82 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import '../css/footer.css'
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-section">
-          <h3>ALBORADA</h3>
+      <div className="footer-top">
+        <div className="footer-brand">
+          <img src="/img/logo-alborada-corto.jpg" alt="Yerba Mate Alborada" />
+          <p>
+            Yerba Mate Alborada: Tradición, calidad y sabor del corazón yerbatero de Misiones. Desde el monte a tu mate.
+          </p>
+          <div className="footer-socials">
+            <a href="https://wa.me/543765042085" className="social-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+              💬
+            </a>
+            <a href="mailto:alboradayerbamate@gmail.com" className="social-btn" title="Email">
+              📧
+            </a>
+            <a href="https://instagram.com/alboradayerbamate" className="social-btn" target="_blank" rel="noopener noreferrer" title="Instagram">
+              📸
+            </a>
+            <a href="https://maps.google.com/maps/place/Misiones,+Argentina" className="social-btn" target="_blank" rel="noopener noreferrer" title="Ubicación">
+              📍
+            </a>
+          </div>
+        </div>
+
+        <div className="footer-col">
+          <h5>Producto</h5>
           <ul>
-            <li><Link to="/products">Productos</Link></li>
-            <li><Link to="/values">Acerca de</Link></li>
-            <li><Link to="/post">Blog</Link></li>
-            <li><Link to="/contact">Contacto</Link></li>
-            <li><Link to="/">Home</Link></li>
+            <li><a href="#solution">Características</a></li>
+            <li><a href="#prepare">Cómo preparar</a></li>
+            <li><a href="#benefits">Beneficios</a></li>
+            <li><a href="/post">Blog</a></li>
           </ul>
         </div>
 
-        <div className="footer-section">
-          <h3>MÁS INFO</h3>
+        <div className="footer-col">
+          <h5>Negocio</h5>
           <ul>
-            <li><a href="#blog">Últimos Posts</a></li>
-            <li><a href="#appointment">Agendar Cita</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>SÍGUENOS</h3>
-          <ul className="social-links">
+            <li><a href="#resellers">Revendedores</a></li>
+            <li><a href="#resellers">Distribuidores</a></li>
+            <li><a href="#resellers">Mayorista</a></li>
             <li>
-              <a 
-                href="https://wa.me/543765042085" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
-            </li>
-            <li>
-              <a 
-                href="mailto:alboradayerbamate@gmail.com"
-              >
-                Email
-              </a>
-            </li>
-            <li>
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a 
-                href="https://maps.google.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Google Maps
-              </a>
+              <div className="contact-line">
+                <span>WhatsApp:</span>
+                <a href="https://wa.me/543765042085" target="_blank" rel="noopener noreferrer">
+                  +54 3765 042085
+                </a>
+              </div>
             </li>
           </ul>
         </div>
 
-        <div className="footer-section newsletter">
-          <h3>Boletín</h3>
-          <p>Adherite para recibir noticias en tu correo electrónico</p>
-          <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="email" 
-              placeholder="Tu email" 
-              required 
-            />
-            <button type="submit">Suscribirse</button>
-          </form>
+        <div className="footer-col">
+          <h5>Newsletter</h5>
+          <div className="newsletter">
+            <p>Recibí ofertas y noticias en tu correo</p>
+            <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
+              <input 
+                type="email" 
+                placeholder="Tu email" 
+                required 
+              />
+              <button type="submit">Suscribirse</button>
+            </form>
+          </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Yerba Mate Alborada. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Yerba Mate Alborada. Todos los derechos reservados.</p>
+        <div className="footer-legal">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+        <div className="footer-province">
+          📍 Misiones, Argentina
+        </div>
       </div>
     </footer>
   )
