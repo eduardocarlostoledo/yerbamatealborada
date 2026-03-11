@@ -1,0 +1,91 @@
+/* ─── RESELLERS ───────────────────────────────────────── */
+#resellers {
+  background: var(--blanco);
+  padding: 7rem 5%;
+}
+
+.resellers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.reseller-card {
+  border: 1px solid var(--crema-oscura);
+  border-radius: 8px;
+  padding: 2rem 1.6rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.25s;
+}
+
+.reseller-card:hover {
+  border-color: var(--verde-claro);
+  transform: translateY(-4px);
+}
+
+.reseller-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--verde-mate), var(--verde-claro));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.reseller-card:hover::after {
+  transform: scaleX(1);
+}
+
+.reseller-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.reseller-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--verde-selva);
+  margin-bottom: 0.7rem;
+}
+
+.reseller-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reseller-card ul li {
+  font-size: 0.88rem;
+  color: var(--texto-suave);
+  line-height: 1.5;
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.reseller-card ul li::before {
+  content: '→';
+  color: var(--verde-claro);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .resellers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .resellers-grid {
+    grid-template-columns: 1fr;
+  }
+}

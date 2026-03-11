@@ -1,83 +1,72 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
-import Grid from '../components/Grid'
-import postsData from '../data/posts.json'
+import TrustBar from '../components/TrustBar'
+import Problem from '../components/Problem'
+import Solution from '../components/Solution'
+import HowToPrepare from '../components/HowToPrepare'
+import Testimonial from '../components/Testimonial'
+import Resellers from '../components/Resellers'
+import FAQ from '../components/FAQ'
+import CTA from '../components/CTA'
 import '../css/pages/home.css'
 
-// Datos temporales - Luego migrar a archivo de datos
-const products = [
-  {
-    title: 'Producto Principal',
-    text: 'Descripción del producto principal',
-    image: '/img/producto-principal.png'
-  },
-  {
-    title: 'Producto 2',
-    text: 'Descripción del segundo producto',
-    image: '/img/producto-2-principal.png'
-  }
-]
-
-// Últimos 4 posts del JSON
-const recentPosts = postsData.slice(0, 4)
-
 export default function Home() {
+  const benefits = [
+    {
+      icon: '⚡',
+      title: 'Energía natural',
+      text: 'Gracias a su cafeína natural, el mate es una excelente fuente de energía sin los efectos negativos de otras bebidas estimulantes.',
+    },
+    {
+      icon: '🛡️',
+      title: 'Rico en antioxidantes',
+      text: 'Ayuda a combatir el envejecimiento celular y fortalece el sistema inmunológico de forma natural.',
+    },
+    {
+      icon: '🌿',
+      title: 'Digestivo',
+      text: 'Facilita la digestión y ayuda a mantener un sistema digestivo saludable con cada cebada.',
+    },
+    {
+      icon: '❤️',
+      title: 'Comunión social',
+      text: 'El mate es más que una bebida: es un símbolo de unión y de compartir en la cultura argentina y latinoamericana.',
+    },
+  ];
+
   return (
     <div className="home-page">
-      <Hero
-        image="/img/hero-home.jpg"
-        title="Yerba Mate Alborada"
-        subtitle="Elaborada con palo de origen Misiones"
-      />
-
-      {/* Blurb Section */}
-      <section className="blurb-section">
-        <div className="container">
-          <p className="blurb-text">
-            Descubre la autenticidad y calidad de nuestra yerba mate, 
-            elaborada con tradición desde Misiones. Cada sorbo es una experiencia única.
+      <Hero />
+      <TrustBar />
+      <Problem />
+      <Solution />
+      <HowToPrepare />
+      
+      {/* Benefits Section */}
+      <section id="benefits" className="benefits-section">
+        <div className="reveal" style={{ textAlign: 'center' }}>
+          <span className="section-tag">Por qué tomar mate</span>
+          <h2 className="section-title">
+            Más que una bebida.<br />Un estilo de vida.
+          </h2>
+          <p className="section-sub" style={{ margin: '0 auto' }}>
+            La yerba mate de Misiones no solo es deliciosa: también ofrece beneficios reales para tu salud y bienestar.
           </p>
         </div>
-      </section>
-
-      {/* Products Showcase */}
-      <section className="products-showcase">
-        <div className="container">
-          <Grid items={products} columns={2} />
+        <div className="benefits-grid reveal">
+          {benefits.map((benefit, i) => (
+            <div key={i} className="benefit-card">
+              <span className="benefit-icon">{benefit.icon}</span>
+              <h3>{benefit.title}</h3>
+              <p>{benefit.text}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* Values Preview */}
-      <section className="values-preview">
-        <div className="container">
-          <div className="values-content">
-            <h2>Nuestros Valores</h2>
-            <p>Tradición, calidad y sabor en cada paquete de yerba mate Alborada.</p>
-            <Link to="/values" className="link-button">Conocer más</Link>
-          </div>
-          <img src="/img/values-hero.jpg" alt="Nuestros valores" />
-        </div>
-      </section>
-
-      {/* Recent Blog Posts */}
-      <section className="recent-posts">
-        <div className="container">
-          <h2>Últimas Noticias</h2>
-          <div className="posts-grid">
-            {recentPosts.map((post) => (
-              <article key={post.slug} className="post-card">
-                <img src={post.image} alt={post.title} />
-                <h3>{post.title}</h3>
-                <time>{new Date(post.date).toLocaleDateString('es-ES')}</time>
-                <Link to={`/post/${post.slug}`} className="read-more">
-                  Leer más →
-                </Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Resellers />
+      <FAQ />
+      <CTA />
     </div>
   )
 }

@@ -1,0 +1,146 @@
+/* ─── SOLUTION ────────────────────────────────────────── */
+#solution {
+  background: var(--verde-selva);
+  padding: 7rem 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+#solution::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(ellipse at right center, rgba(74, 138, 82, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.solution-section .section-title {
+  color: var(--crema);
+}
+
+.solution-section .section-sub {
+  color: rgba(245, 240, 232, 0.65);
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.solution-card {
+  background: rgba(245, 240, 232, 0.06);
+  border: 1px solid rgba(245, 240, 232, 0.12);
+  border-radius: 6px;
+  padding: 2rem 1.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s, transform 0.25s;
+}
+
+.solution-card:hover {
+  background: rgba(245, 240, 232, 0.1);
+  transform: translateY(-4px);
+}
+
+.solution-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--dorado), transparent);
+}
+
+.solution-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.solution-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dorado-claro);
+  margin-bottom: 0.7rem;
+}
+
+.solution-card p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: rgba(245, 240, 232, 0.65);
+}
+
+.solution-product {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.solution-product img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.solution-details h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--crema);
+  margin-bottom: 1.2rem;
+}
+
+.solution-details p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(245, 240, 232, 0.65);
+  margin-bottom: 2rem;
+}
+
+.feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+  color: rgba(245, 240, 232, 0.8);
+}
+
+.feature-list li::before {
+  content: '✦';
+  color: var(--dorado);
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .solution-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .solution-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-product {
+    grid-template-columns: 1fr;
+  }
+}

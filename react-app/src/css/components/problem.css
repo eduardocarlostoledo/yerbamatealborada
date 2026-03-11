@@ -1,0 +1,130 @@
+/* ─── PROBLEM ─────────────────────────────────────────── */
+#problem {
+  background: var(--blanco);
+  padding: 7rem 5%;
+}
+
+.section-tag {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dorado);
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--verde-selva);
+  margin-bottom: 1.2rem;
+}
+
+.section-sub {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--texto-suave);
+  max-width: 580px;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.problem-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.problem-card {
+  background: var(--crema);
+  border-left: 3px solid var(--dorado);
+  padding: 1.4rem 1.6rem;
+  border-radius: 0 6px 6px 0;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.problem-card:hover {
+  transform: translateX(6px);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.problem-card h4 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--verde-selva);
+  margin-bottom: 0.4rem;
+}
+
+.problem-card p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--texto-suave);
+}
+
+.problem-image {
+  position: relative;
+}
+
+.problem-image img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 20px 50px rgba(26, 58, 30, 0.2);
+}
+
+.problem-image-quote {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: var(--verde-selva);
+  color: var(--crema);
+  padding: 1.4rem 1.8rem;
+  border-radius: 4px;
+  max-width: 240px;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.problem-image-quote::after {
+  content: attr(data-author);
+  display: block;
+  margin-top: 0.6rem;
+  font-style: normal;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  color: var(--dorado-claro);
+  letter-spacing: 0.06em;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-image {
+    display: none;
+  }
+}
