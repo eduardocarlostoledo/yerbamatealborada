@@ -2,6 +2,8 @@
    GLOBAL STYLES & RESET
    ======================================== */
 
+@import './components/animations.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -83,6 +85,7 @@ p {
   margin-bottom: var(--spacing-md);
   color: var(--text-light);
   line-height: var(--line-height-relaxed);
+  opacity: 0.88;
 }
 
 a {
@@ -253,62 +256,94 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
-/* ─── BENEFITS ────────────────────────────────────────── */
+/* ─── BENEFITS SECTION ────────────────────────────────── */
 #benefits {
   background: var(--blanco);
-  padding: 7rem 5%;
+  padding: 6rem 5% 7rem;
 }
 
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 4rem;
 }
 
 .benefit-card {
-  background: var(--crema);
-  border-radius: 8px;
-  padding: 2rem 1.6rem;
+  background: white;
+  border-radius: 0;
+  padding: 2.2rem 1.8rem;
   text-align: center;
-  border-bottom: 3px solid transparent;
-  transition: border-color 0.3s, transform 0.25s;
+  border: none;
+  border-top: 3px solid var(--dorado);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dorado-claro), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .benefit-card:hover {
-  border-color: var(--dorado);
-  transform: translateY(-4px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(26, 58, 30, 0.08);
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
 }
 
 .benefit-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
   display: block;
+  transition: transform 0.3s;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.08);
 }
 
 .benefit-card h3 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--verde-selva);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.02em;
 }
 
 .benefit-card p {
   font-size: 0.88rem;
   line-height: 1.6;
   color: var(--texto-suave);
+  opacity: 0.88;
 }
 
 @media (max-width: 1024px) {
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .benefits-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  #benefits {
+    padding: 4rem 5% 5rem;
   }
 }
 

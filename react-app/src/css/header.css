@@ -12,6 +12,7 @@
   background: rgba(26, 58, 30, 0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(200, 146, 26, 0.2);
+  transition: all 0.3s ease;
 }
 
 .nav-logo {
@@ -19,6 +20,11 @@
   align-items: center;
   gap: 0.8rem;
   text-decoration: none;
+  transition: opacity 0.25s;
+}
+
+.nav-logo:hover {
+  opacity: 0.85;
 }
 
 .nav-logo img {
@@ -44,15 +50,17 @@
 .nav-links a {
   color: var(--crema);
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: color 0.25s;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  transition: color 0.25s, opacity 0.25s;
+  opacity: 0.88;
 }
 
 .nav-links a:hover {
   color: var(--dorado-claro);
+  opacity: 1;
 }
 
 .nav-cta {
@@ -60,17 +68,20 @@
   color: var(--verde-selva);
   padding: 0.6rem 1.4rem;
   border-radius: 2px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   font-size: 0.88rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: background 0.25s;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  transition: all 0.25s;
   display: inline-block;
+  box-shadow: 0 4px 12px rgba(200, 146, 26, 0.2);
 }
 
 .nav-cta:hover {
   background: var(--dorado-claro);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(200, 146, 26, 0.35);
 }
 
 .nav-hamburger {
@@ -85,6 +96,7 @@
   height: 2px;
   background: var(--crema);
   border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -130,23 +142,19 @@
   .nav-hamburger {
     display: flex;
   }
-}
-  transform: rotate(45deg) translate(10px, 10px);
-}
 
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(8px, -8px);
-}
-
-/* Mobile Menu */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
+  .nav-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
   }
+
+  .nav-hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+}
 
   .nav-menu {
     position: absolute;

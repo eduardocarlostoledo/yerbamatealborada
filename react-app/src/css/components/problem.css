@@ -28,6 +28,7 @@
   line-height: 1.7;
   color: var(--texto-suave);
   max-width: 580px;
+  opacity: 0.92;
 }
 
 .problem-grid {
@@ -69,6 +70,7 @@
   font-size: 0.92rem;
   line-height: 1.6;
   color: var(--texto-suave);
+  opacity: 0.88;
 }
 
 .problem-image {
