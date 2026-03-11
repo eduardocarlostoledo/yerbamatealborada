@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import Grid from '../components/Grid'
+import postsData from '../data/posts.json'
 import '../css/pages/home.css'
 
 // Datos temporales - Luego migrar a archivo de datos
@@ -18,32 +19,8 @@ const products = [
   }
 ]
 
-const recentPosts = [
-  {
-    title: 'Beneficios de consumir yerba mate',
-    slug: 'beneficios-de-consumir-yerba-mate-de-misiones',
-    date: '2024-01-15',
-    image: '/img/blog-post-1.jpg'
-  },
-  {
-    title: 'Qué es la Yerba Mate',
-    slug: 'que-es-la-yerba-mate',
-    date: '2024-01-10',
-    image: '/img/blog-post-2.jpg'
-  },
-  {
-    title: 'Cómo preparar el mate perfecto',
-    slug: 'como-preparar-el-mate-perfecto',
-    date: '2024-01-05',
-    image: '/img/blog-post-3.jpg'
-  },
-  {
-    title: 'Yerba Mate Alborada - Calidad y tradición',
-    slug: 'yerba-mate-alborada-calidad-y-tradicion',
-    date: '2024-01-01',
-    image: '/img/blog-post-4.jpg'
-  }
-]
+// Últimos 4 posts del JSON
+const recentPosts = postsData.slice(0, 4)
 
 export default function Home() {
   return (

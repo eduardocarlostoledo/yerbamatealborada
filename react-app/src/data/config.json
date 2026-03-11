@@ -1,0 +1,43 @@
+{
+  "site": {
+    "title": "Yerba Mate Alborada",
+    "description": "Yerba Mate elaborada con palo de origen Misiones - Tradición, calidad y sabor en cada sorbo",
+    "url": "https://yerbamatealborada.com",
+    "defaultImage": "/img/matecito-blanco.jpeg",
+    "language": "es"
+  },
+  "navigation": [
+    {
+      "label": "Productos",
+      "path": "/products"
+    },
+    {
+      "label": "Acerca de",
+      "path": "/values"
+    },
+    {
+      "label": "Blog",
+      "path": "/post"
+    },
+    {
+      "label": "Contacto",
+      "path": "/contact"
+    }
+  ],
+  "footer": {
+    "newsletter": {
+      "title": "Boletín",
+      "blurb": "Adherite para recibir noticias en tu correo electrónico"
+    },
+    "social": {
+      "whatsapp": "https://wa.me/543765042085",
+      "email": "alboradayerbamate@gmail.com",
+      "instagram": "",
+      "maps": ""
+    }
+  },
+  "seo": {
+    "ogImage": "/img/matecito-blanco.jpeg",
+    "twitterHandle": "@alborada"
+  }
+}

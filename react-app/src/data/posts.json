@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "slug": "beneficios-de-consumir-yerba-mate-de-misiones",
+    "title": "Beneficios de consumir yerba mate de Misiones",
+    "date": "2024-01-15",
+    "description": "Descubre los múltiples beneficios para la salud que ofrece la yerba mate.",
+    "image": "/img/blog-post-1.jpg",
+    "content": "<h2>Los múltiples beneficios de la Yerba Mate</h2>\n<p>La yerba mate no es solo una bebida deliciosa, sino que también ofrece numerosos beneficios para la salud...</p>\n<h3>Antioxidantes naturales</h3>\n<p>La yerba mate contiene más de 196 activos compuesto, incluyendo polifenoles que actúan como potentes antioxidantes.</p>\n<h3>Energía natural</h3>\n<p>Con cafeína natural, la yerba mate proporciona un estimulante suave pero efectivo sin los efectos secundarios del café.</p>\n<h3>Digestión mejorada</h3>\n<p>Estudios muestran que consumir yerba mate favorece la digestión y puede ayudar a mantener un peso saludable.</p>"
+  },
+  {
+    "id": "2",
+    "slug": "que-es-la-yerba-mate",
+    "title": "Qué es la Yerba Mate",
+    "date": "2024-01-10",
+    "description": "Una guía completa sobre el origen, producción y propiedades de la yerba mate.",
+    "image": "/img/blog-post-2.jpg",
+    "content": "<h2>Introducción a la Yerba Mate</h2>\n<p>La yerba mate es una bebida tradicional preparada a partir de las hojas de la planta Ilex paraguariensis, originaria de América del Sur...</p>\n<h3>Origen histórico</h3>\n<p>Los guaraníes fueron los primeros en consumir yerba mate, reconociendo sus propiedades energizantes y medicinales.</p>\n<h3>Producción en Misiones</h3>\n<p>Misiones es la región más importante de producción de yerba mate en Argentina, con condiciones climáticas ideales para su cultivo.</p>"
+  },
+  {
+    "id": "3",
+    "slug": "como-preparar-el-mate-perfecto-con-yerba-mate-de-misiones",
+    "title": "Cómo preparar el mate perfecto con Yerba Mate de Misiones",
+    "date": "2024-01-05",
+    "description": "Aprende los secretos para preparar un mate perfecto, paso a paso.",
+    "image": "/img/blog-post-3.jpg",
+    "content": "<h2>Guía para preparar el mate perfecto</h2>\n<p>Preparar un buen mate es un arte que combina técnica y pasión. Aquí te compartimos nuestros consejos...</p>\n<h3>Paso 1: Elige el recipiente correcto</h3>\n<p>Un mate tradicional de cerámica o calabaza es lo ideal. Caliéntalo antes de usarlo.</p>\n<h3>Paso 2: La temperatura del agua</h3>\n<p>El agua debe estar entre 70-80 grados Celsius. Muy caliente puede quemar la yerba.</p>"
+  },
+  {
+    "id": "4",
+    "slug": "buscamos-representantes-revendedores-y-distribuidores",
+    "title": "Buscamos representantes, revendedores y distribuidores",
+    "date": "2024-01-01",
+    "description": "Únete a nuestro equipo y sé parte de la experiencia Alborada.",
+    "image": "/img/blog-post-4.jpg",
+    "content": "<h2>Oportunidades de Negocio</h2>\n<p>Estamos buscando profesionales apasionados que quieran ser parte de nuestro crecimiento...</p>\n<h3>Representante</h3>\n<p>Oportunidad de comisión competitiva y material de marketing incluido.</p>\n<h3>Distribuidor</h3>\n<p>Para negocios mayoristas con acceso a términos de pago flexibles.</p>"
+  },
+  {
+    "id": "5",
+    "slug": "brewing-chemex",
+    "title": "Técnicas modernas para preparar mate usando Chemex",
+    "date": "2023-12-28",
+    "description": "Explorando nuevas formas de disfrutar la yerba mate con equipos modernos.",
+    "image": "/img/blog-post-5.jpg",
+    "content": "<h2>Brewing con Chemex</h2>\n<p>Descubre cómo la tecnología moderna puede mejorar tu experiencia con yerba mate...</p>"
+  },
+  {
+    "id": "6",
+    "slug": "yerba-mate-alborada-calidad-y-tradicion-en-cada-paquete",
+    "title": "Yerba Mate Alborada - Calidad y tradición en cada paquete",
+    "date": "2023-12-25",
+    "description": "Conoce cómo garantizamos la calidad diferencial en nuestros productos.",
+    "image": "/img/blog-post-6.jpg",
+    "content": "<h2>Nuestro Compromiso con la Calidad</h2>\n<p>Cada paquete de Alborada representa años de experiencia y dedicación...</p>\n<h3>Proceso de Selección</h3>\n<p>Seleccionamos solo las mejores hojas de Misiones para garantizar sabor y calidad.</p>"
+  },
+  {
+    "id": "7",
+    "slug": "yerba-mate-de-misiones-tradicion-calidad-y-sabor-en-cada-sorbo",
+    "title": "Yerba Mate de Misiones - Tradición, calidad y sabor en cada sorbo",
+    "date": "2023-12-20",
+    "description": "Sumergete en la experiencia única de la yerba mate de Misiones.",
+    "image": "/img/blog-post-7.jpg",
+    "content": "<h2>La Esencia de Misiones en Cada Sorbo</h2>\n<p>La yerba mate de Misiones es el resultado de generaciones de passion y expertise...</p>"
+  }
+]
