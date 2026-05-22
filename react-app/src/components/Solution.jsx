@@ -1,34 +1,35 @@
+import Icon from './Icon'
 import '../css/components/solution.css'
 
 export default function Solution() {
   const features = [
     {
-      icon: '🌿',
+      iconType: 'leaf',
       title: 'Hojas seleccionadas',
       description: 'Seleccionamos cuidadosamente las hojas de yerba mate para asegurar un sabor y aroma inigualables en cada infusión.',
     },
     {
-      icon: '🪵',
+      iconType: 'wood',
       title: 'Con palo ideal',
       description: 'El tamaño de palo justo y la cantidad de polvillo precisa generan un sabor meticulosamente diseñado para el deleite.',
     },
     {
-      icon: '📍',
+      iconType: 'location',
       title: '100% Origen Misiones',
       description: 'Producida en el corazón yerbatero del país. Sin mezclas. Sin intermediarios innecesarios. Del monte a tu mate.',
     },
     {
-      icon: '💰',
+      iconType: 'price',
       title: 'Precio competitivo',
       description: 'Los mejores precios del mercado sin comprometer la calidad, para el consumidor final y para quien quiera revender.',
     },
     {
-      icon: '📈',
+      iconType: 'growth',
       title: 'Tendencia en crecimiento',
       description: 'Producto con alta demanda nacional e internacional. El mate premium es una de las bebidas más buscadas hoy.',
     },
     {
-      icon: '🤝',
+      iconType: 'handshake',
       title: 'Soporte real',
       description: 'Atención directa con los productores. Exclusividad por zona para revendedores. Acompañamos tu negocio.',
     },
@@ -59,7 +60,7 @@ export default function Solution() {
       <div className="solution-grid reveal">
         {features.map((feature, i) => (
           <div key={i} className="solution-card">
-            <span className="solution-icon">{feature.icon}</span>
+            <Icon type={feature.iconType} size="lg" />
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
           </div>
@@ -68,7 +69,7 @@ export default function Solution() {
 
       <div className="solution-product reveal">
         <img
-          src="/img/producto-2-principal.png"
+          src="/img/producto.png"
           alt="Producto Yerba Mate Alborada"
         />
         <div className="solution-details">

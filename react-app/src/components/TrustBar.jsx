@@ -1,19 +1,20 @@
+import Icon from './Icon'
 import '../css/components/trust-bar.css'
 
 export default function TrustBar() {
   const trustItems = [
-    { icon: '🌿', text: 'Sin conservantes artificiales' },
-    { icon: '📦', text: 'Envíos a todo el país' },
-    { icon: '🏅', text: 'Calidad premium garantizada' },
-    { icon: '💬', text: 'Atención directa por WhatsApp' },
-    { icon: '🤝', text: 'Somos de Misiones' },
+    { iconType: 'leaf', text: 'Sin conservantes artificiales' },
+    { iconType: 'box', text: 'Envíos a todo el país' },
+    { iconType: 'star', text: 'Calidad premium garantizada' },
+    { iconType: 'phone', text: 'Atención directa por WhatsApp' },
+    { iconType: 'heart', text: 'Somos de Misiones' },
   ];
 
   return (
     <div className="trust-bar">
       {trustItems.map((item, i) => (
         <div key={i} className="trust-item">
-          <span className="trust-icon">{item.icon}</span>
+          <Icon type={item.iconType} size="md" />
           {item.text}
         </div>
       ))}

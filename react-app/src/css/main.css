@@ -3,6 +3,9 @@
    ======================================== */
 
 @import './components/animations.css';
+@import './components/reading-time.css';
+@import './components/related-posts.css';
+@import './components/blog-sidebar.css';
 
 * {
   margin: 0;
@@ -216,6 +219,31 @@ input:focus, textarea:focus, select:focus {
 
   .container {
     padding: 0 var(--spacing-md);
+  }
+}
+
+@media (max-width: 370px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 { font-size: clamp(1.5rem, 4vw, 1.8rem); }
+  h2 { font-size: clamp(1.2rem, 3.5vw, 1.5rem); }
+  h3 { font-size: clamp(1rem, 3vw, 1.25rem); }
+
+  .grid {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  button, .btn, .cta-button, .submit-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
   }
 }
 

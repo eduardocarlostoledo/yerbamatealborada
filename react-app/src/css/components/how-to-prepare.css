@@ -97,3 +97,62 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 370px) {
+  #prepare {
+    padding: 2.5rem 1rem;
+  }
+
+  .section-tag {
+    font-size: 0.68rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .section-sub {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .prepare-steps {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .prepare-steps::before {
+    display: none;
+  }
+
+  .step-card {
+    padding: 1.2rem 1rem 1rem;
+  }
+
+  .step-num {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    border-width: 2px;
+  }
+
+  .step-card h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .step-card p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .step-temp {
+    margin-top: 0.4rem;
+    padding: 0.15rem 0.6rem;
+    font-size: 0.7rem;
+  }
+}

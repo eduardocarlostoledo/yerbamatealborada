@@ -18,12 +18,21 @@ function AppContent() {
     // Inicializar animaciones de reveal cuando hay cambios de ruta
     const timer = setTimeout(() => {
       initRevealAnimations()
-      // Scroll al top cuando cambia de página
-      window.scrollTo(0, 0)
+      
+      // Si hay un hash en la URL, scroll a ese elemento
+      if (location.hash) {
+        const element = document.querySelector(location.hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      } else {
+        // Si no hay hash, scroll al top
+        window.scrollTo(0, 0)
+      }
     }, 100)
 
     return () => clearTimeout(timer)
-  }, [location.pathname])
+  }, [location.pathname, location.hash])
 
   return (
     <>

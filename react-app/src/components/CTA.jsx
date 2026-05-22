@@ -1,19 +1,20 @@
+import Icon from './Icon'
 import '../css/components/cta.css'
 
 export default function CTA() {
   const ctaCards = [
     {
-      icon: '📱',
+      iconType: 'phone',
       title: 'Contacto directo',
       description: 'Escribinos por WhatsApp para consultas, presupuestos o pedidos personalizados.',
     },
     {
-      icon: '🚚',
+      iconType: 'truck',
       title: 'Envío rápido',
       description: 'Procesamos pedidos en 24hs hábiles. Envíos a todo el país con seguimiento.',
     },
     {
-      icon: '✅',
+      iconType: 'check',
       title: 'Garantía de calidad',
       description: 'Cada paquete es inspeccionado para garantizar la mejor yerba mate premium.',
     },
@@ -42,7 +43,7 @@ export default function CTA() {
       <div className="cta-cards reveal">
         {ctaCards.map((card, i) => (
           <div key={i} className="cta-card">
-            <span className="cta-card-icon">{card.icon}</span>
+            <Icon type={card.iconType} size="lg" />
             <h4>{card.title}</h4>
             <p>{card.description}</p>
           </div>

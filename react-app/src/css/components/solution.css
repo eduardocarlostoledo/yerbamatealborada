@@ -84,6 +84,16 @@
   transform: scale(1.12) translateY(-2px);
 }
 
+/* Icon component styling for solution cards */
+.solution-card .icon {
+  font-size: 2.4rem !important;
+  margin-bottom: 1.2rem;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--dorado-claro);
+}
+
 .solution-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.15rem;
@@ -164,5 +174,61 @@
 
   .solution-product {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 370px) {
+  #solution {
+    padding: 2.5rem 1rem;
+  }
+
+  .solution-section .section-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .solution-section .section-sub {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .solution-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .solution-card {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .solution-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .solution-card p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .solution-product {
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .solution-details h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .solution-details p {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .feature-list li {
+    font-size: 0.85rem;
+    gap: 0.6rem;
   }
 }

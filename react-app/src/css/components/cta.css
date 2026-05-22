@@ -124,3 +124,61 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 370px) {
+  #cta {
+    padding: 2.5rem 1rem;
+  }
+
+  .cta-tag {
+    font-size: 0.68rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-title {
+    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+    margin-bottom: 0.8rem;
+  }
+
+  .cta-sub {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
+
+  .cta-actions {
+    gap: 0.5rem;
+  }
+
+  .btn-primary,
+  .btn-whatsapp {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .cta-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .cta-card {
+    padding: 1.2rem;
+  }
+
+  .cta-card-icon {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .cta-card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .cta-card p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}

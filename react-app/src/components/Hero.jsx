@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
       <div className="hero-image-wrap">
         <img
-          src="/img/producto-principal.png"
+          src="/img/flyer.jpeg"
           alt="Yerba Mate Alborada producto principal"
         />
         <svg

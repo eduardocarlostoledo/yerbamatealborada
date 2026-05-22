@@ -1,9 +1,10 @@
+import Icon from './Icon'
 import '../css/components/resellers.css'
 
 export default function Resellers() {
   const resellers = [
     {
-      icon: '🗺️',
+      iconType: 'map',
       title: 'Representantes',
       features: [
         'Exclusividad territorial por provincia o zona',
@@ -13,7 +14,7 @@ export default function Resellers() {
       ],
     },
     {
-      icon: '🏪',
+      iconType: 'shop',
       title: 'Distribuidores',
       features: [
         'Margen mayorista especial',
@@ -23,7 +24,7 @@ export default function Resellers() {
       ],
     },
     {
-      icon: '🎁',
+      iconType: 'gift',
       title: 'Revendedores',
       features: [
         'Precios especiales por volumen',
@@ -33,7 +34,7 @@ export default function Resellers() {
       ],
     },
     {
-      icon: '💼',
+      iconType: 'briefcase',
       title: 'B2B / Mayorista',
       features: [
         'Cotizaciones personalizadas',
@@ -58,7 +59,7 @@ export default function Resellers() {
       <div className="resellers-grid reveal">
         {resellers.map((reseller, i) => (
           <div key={i} className="reseller-card">
-            <span className="reseller-icon">{reseller.icon}</span>
+            <Icon type={reseller.iconType} size="xl" />
             <h3>{reseller.title}</h3>
             <ul>
               {reseller.features.map((feature, j) => (

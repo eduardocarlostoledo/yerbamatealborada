@@ -49,3 +49,25 @@
     direction: ltr;
   }
 }
+
+@media (max-width: 370px) {
+  .media-block {
+    gap: 1rem;
+    padding: 1.5rem 0;
+    margin: 1.5rem 0;
+  }
+
+  .media-block-text h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .media-block-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .media-block-image img {
+    border-radius: 4px;
+  }
+}

@@ -1,6 +1,9 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import postsData from '../data/posts.json'
+import ReadingTime from '../components/ReadingTime'
+import RelatedPosts from '../components/RelatedPosts'
+import BlogSidebar from '../components/BlogSidebar'
 import '../css/pages/post-detail.css'
 
 export default function PostDetail() {
@@ -19,24 +22,70 @@ export default function PostDetail() {
 
   return (
     <div className="post-detail-page">
-      <article className="post-article">
-        <header className="post-header">
-          <h1>{post.title}</h1>
-          <time className="post-date">
-            {new Date(post.date).toLocaleDateString('es-ES')}
-          </time>
-        </header>
+      <div className="post-detail-container">
+        <main className="post-detail-main">
+          <article className="post-article">
+            {/* Post Header */}
+            <header className="post-header">
+              <div className="post-breadcrumb">
+                <Link to="/post">Blog</Link>
+                <span className="post-breadcrumb__separator">/</span>
+                <span>{post.category}</span>
+              </div>
 
-        <img src={post.image} alt={post.title} className="post-featured-image" />
+              <h1 className="post-title">{post.title}</h1>
 
-        <div className="post-body" dangerouslySetInnerHTML={{ __html: post.content }} />
+              <div className="post-meta">
+                <div className="post-meta__left">
+                  {post.author && (
+                    <span className="post-author">
+                      Por <strong>{post.author}</strong>
+                    </span>
+                  )}
+                  <time className="post-date">
+                    {new Date(post.date).toLocaleDateString('es-ES', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </time>
+                </div>
+                
+                <ReadingTime minutes={post.readingTime} category={post.category} />
+              </div>
+            </header>
 
-        <footer className="post-footer">
-          <Link to="/post" className="back-to-blog">
-            ← Volver al blog
-          </Link>
-        </footer>
-      </article>
+            {/* Featured Image */}
+            {post.image && (
+              <figure className="post-featured-image">
+                <img src={post.image} alt={post.title} loading="lazy" />
+              </figure>
+            )}
+
+            {/* Post Content */}
+            <div className="post-body" dangerouslySetInnerHTML={{ __html: post.content }} />
+
+            {/* Post Footer */}
+            <footer className="post-footer">
+              <div className="post-footer__tags">
+                {post.keywords && post.keywords.map((keyword, idx) => (
+                  <span key={idx} className="post-tag">{keyword}</span>
+                ))}
+              </div>
+
+              <Link to="/post" className="back-to-blog">
+                ← Volver al blog
+              </Link>
+            </footer>
+          </article>
+
+          {/* Related Posts */}
+          <RelatedPosts posts={postsData} currentPostId={post.id} maxPosts={3} />
+        </main>
+
+        {/* Sidebar */}
+        <BlogSidebar />
+      </div>
     </div>
   )
 }
