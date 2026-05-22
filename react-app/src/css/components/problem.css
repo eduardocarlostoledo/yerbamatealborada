@@ -5,13 +5,25 @@
 }
 
 .section-tag {
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--dorado);
   font-weight: 500;
-  margin-bottom: 0.8rem;
-  display: block;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.section-tag::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1.4rem;
+  height: 1px;
+  background: var(--dorado);
 }
 
 .section-title {

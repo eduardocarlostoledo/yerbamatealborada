@@ -1,4 +1,5 @@
 import React from 'react'
+import Icon from '../components/Icon'
 import Hero from '../components/Hero'
 import TrustBar from '../components/TrustBar'
 import Problem from '../components/Problem'
@@ -13,22 +14,22 @@ import '../css/pages/home.css'
 export default function Home() {
   const benefits = [
     {
-      icon: '⚡',
+      iconType: 'growth',
       title: 'Energía natural',
       text: 'Gracias a su cafeína natural, el mate es una excelente fuente de energía sin los efectos negativos de otras bebidas estimulantes.',
     },
     {
-      icon: '🛡️',
+      iconType: 'leaf',
       title: 'Rico en antioxidantes',
       text: 'Ayuda a combatir el envejecimiento celular y fortalece el sistema inmunológico de forma natural.',
     },
     {
-      icon: '🌿',
+      iconType: 'wood',
       title: 'Digestivo',
       text: 'Facilita la digestión y ayuda a mantener un sistema digestivo saludable con cada cebada.',
     },
     {
-      icon: '❤️',
+      iconType: 'heart',
       title: 'Comunión social',
       text: 'El mate es más que una bebida: es un símbolo de unión y de compartir en la cultura argentina y latinoamericana.',
     },
@@ -56,7 +57,7 @@ export default function Home() {
         <div className="benefits-grid reveal">
           {benefits.map((benefit, i) => (
             <div key={i} className="benefit-card">
-              <span className="benefit-icon">{benefit.icon}</span>
+              <Icon type={benefit.iconType} size="lg" />
               <h3>{benefit.title}</h3>
               <p>{benefit.text}</p>
             </div>

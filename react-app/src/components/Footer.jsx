@@ -1,3 +1,4 @@
+import Icon from './Icon'
 import '../css/footer.css'
 
 export default function Footer() {
@@ -11,16 +12,16 @@ export default function Footer() {
           </p>
           <div className="footer-socials">
             <a href="https://wa.me/543765042085" className="social-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp">
-              💬
+              <Icon type="phone" size="sm" />
             </a>
             <a href="mailto:alboradayerbamate@gmail.com" className="social-btn" title="Email">
-              📧
+              <Icon type="book" size="sm" />
             </a>
             <a href="https://instagram.com/alboradayerbamate" className="social-btn" target="_blank" rel="noopener noreferrer" title="Instagram">
-              📸
+              <Icon type="star" size="sm" />
             </a>
             <a href="https://maps.google.com/maps/place/Misiones,+Argentina" className="social-btn" target="_blank" rel="noopener noreferrer" title="Ubicación">
-              📍
+              <Icon type="location" size="sm" />
             </a>
           </div>
         </div>
@@ -75,7 +76,7 @@ export default function Footer() {
           <a href="#">Términos</a>
         </div>
         <div className="footer-province">
-          📍 Misiones, Argentina
+          Misiones, Argentina
         </div>
       </div>
     </footer>

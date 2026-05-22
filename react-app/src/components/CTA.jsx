@@ -37,7 +37,7 @@ export default function CTA() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          💬 Pedir por WhatsApp
+          Pedir por WhatsApp
         </a>
       </div>
       <div className="cta-cards reveal">

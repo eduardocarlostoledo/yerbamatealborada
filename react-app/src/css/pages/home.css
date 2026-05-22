@@ -231,8 +231,9 @@
     padding: 1.2rem 1rem;
   }
 
-  .benefit-icon {
-    font-size: 2rem;
+  .benefit-card .icon {
+    width: 1.8rem;
+    height: 1.8rem;
     margin-bottom: 0.5rem;
   }
 
