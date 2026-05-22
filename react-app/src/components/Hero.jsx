@@ -22,7 +22,7 @@ export default function Hero() {
           >
             Pedir ahora por WhatsApp
           </a>
-          <a href="#solution" className="btn-ghost">
+          <a href="/#solution" className="btn-ghost">
             Conocer el producto
           </a>
         </div>
