@@ -1,8 +1,0 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Yerba Mate Alborada - Yerba Mate elaborada con palo de origen Misiones"
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
-
-[params]
-images = ["img/matecito-blanco.jpeg"]
