@@ -1,7 +1,18 @@
 /* ─── PROBLEM ─────────────────────────────────────────── */
 #problem {
-  background: var(--blanco);
+  background: var(--verde-selva);
   padding: 7rem 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+#problem::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 55% 50% at 12% 15%, rgba(200, 146, 26, 0.1) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 55% at 95% 85%, rgba(74, 138, 82, 0.14) 0%, transparent 65%);
+  pointer-events: none;
 }
 
 .section-tag {
@@ -31,16 +42,16 @@
   font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--verde-selva);
+  color: var(--crema);
   margin-bottom: 1.2rem;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
 }
 
 .section-sub {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: var(--texto-suave);
+  color: rgba(245, 240, 232, 0.78);
   max-width: 580px;
-  opacity: 0.92;
 }
 
 .problem-grid {
@@ -58,31 +69,33 @@
 }
 
 .problem-card {
-  background: var(--crema);
+  background: rgba(245, 240, 232, 0.045);
+  border: 1px solid rgba(245, 240, 232, 0.08);
   border-left: 3px solid var(--dorado);
   padding: 1.4rem 1.6rem;
   border-radius: 0 6px 6px 0;
-  transition: transform 0.25s, box-shadow 0.25s;
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
 }
 
 .problem-card:hover {
   transform: translateX(6px);
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.07);
+  background: rgba(245, 240, 232, 0.075);
+  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.3);
 }
 
 .problem-card h4 {
   font-family: 'Libre Baskerville', serif;
   font-size: 1rem;
   font-weight: 700;
-  color: var(--verde-selva);
+  color: var(--dorado-claro);
   margin-bottom: 0.4rem;
 }
 
 .problem-card p {
   font-size: 0.92rem;
   line-height: 1.6;
-  color: var(--texto-suave);
-  opacity: 0.88;
+  color: rgba(245, 240, 232, 0.75);
 }
 
 .problem-image {
@@ -99,7 +112,9 @@
   position: absolute;
   bottom: -20px;
   left: -20px;
-  background: var(--verde-selva);
+  background: rgba(10, 22, 12, 0.88);
+  border: 1px solid rgba(200, 146, 26, 0.3);
+  backdrop-filter: blur(10px);
   color: var(--crema);
   padding: 1.4rem 1.8rem;
   border-radius: 4px;
@@ -108,7 +123,7 @@
   font-style: italic;
   font-size: 0.92rem;
   line-height: 1.5;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .problem-image-quote::after {
@@ -120,17 +135,6 @@
   font-size: 0.78rem;
   color: var(--dorado-claro);
   letter-spacing: 0.06em;
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 @media (max-width: 768px) {

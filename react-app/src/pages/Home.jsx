@@ -1,10 +1,13 @@
 import React from 'react'
 import Icon from '../components/Icon'
 import Hero from '../components/Hero'
+import TerrainDivider from '../components/TerrainDivider'
 import TrustBar from '../components/TrustBar'
 import Problem from '../components/Problem'
+import ParticleSection from '../components/ParticleSection'
 import Solution from '../components/Solution'
 import HowToPrepare from '../components/HowToPrepare'
+import Experience from '../components/Experience'
 import Testimonials from '../components/Testimonials'
 import Resellers from '../components/Resellers'
 import FAQ from '../components/FAQ'
@@ -38,11 +41,15 @@ export default function Home() {
   return (
     <div className="home-page">
       <Hero />
+      <TerrainDivider />
       <TrustBar />
       <Problem />
+      <ParticleSection />
       <Solution />
       <HowToPrepare />
-      
+      <Experience />
+      <ParticleSection />
+
       {/* Benefits Section */}
       <section id="benefits" className="benefits-section">
         <div className="reveal" style={{ textAlign: 'center' }}>
@@ -67,6 +74,7 @@ export default function Home() {
 
       <Testimonials />
       <Resellers />
+      <ParticleSection />
       <FAQ />
       <CTA />
     </div>

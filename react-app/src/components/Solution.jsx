@@ -1,4 +1,5 @@
 import Icon from './Icon'
+import TiltCard from './TiltCard'
 import '../css/components/solution.css'
 
 export default function Solution() {
@@ -59,11 +60,11 @@ export default function Solution() {
 
       <div className="solution-grid reveal">
         {features.map((feature, i) => (
-          <div key={i} className="solution-card">
+          <TiltCard key={i} className="solution-card">
             <Icon type={feature.iconType} size="lg" />
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
-          </div>
+          </TiltCard>
         ))}
       </div>
 

@@ -279,6 +279,70 @@ input:focus, textarea:focus, select:focus {
   display: none !important;
 }
 
+/* ─── GRAIN OVERLAY ───────────────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* ─── CUSTOM CURSOR ───────────────────────────────────── */
+html.custom-cursor-active,
+html.custom-cursor-active body,
+html.custom-cursor-active a,
+html.custom-cursor-active button {
+  cursor: none;
+}
+
+.custom-cursor-dot,
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.custom-cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background: var(--dorado-claro);
+  box-shadow: 0 0 8px rgba(232, 176, 64, 0.8);
+  transition: opacity 0.3s;
+}
+
+.custom-cursor-ring {
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+  border: 1px solid rgba(200, 146, 26, 0.5);
+  transition: width 0.25s, height 0.25s, margin 0.25s, border-color 0.25s, background 0.25s, opacity 0.3s;
+}
+
+html.cursor-hover .custom-cursor-ring {
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  background: rgba(200, 146, 26, 0.1);
+  border-color: rgba(232, 176, 64, 0.85);
+}
+
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none;
+  }
+}
+
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -290,8 +354,24 @@ input:focus, textarea:focus, select:focus {
 
 /* ─── BENEFITS SECTION ────────────────────────────────── */
 #benefits {
-  background: var(--blanco);
+  background: var(--verde-selva);
   padding: 6rem 5% 7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#benefits::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 55% at 50% 0%, rgba(74, 138, 82, 0.16) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+#benefits .reveal,
+#benefits .benefits-grid {
+  position: relative;
+  z-index: 1;
 }
 
 .benefits-grid {
@@ -302,12 +382,13 @@ input:focus, textarea:focus, select:focus {
 }
 
 .benefit-card {
-  background: white;
+  background: rgba(245, 240, 232, 0.05);
   border-radius: 0;
   padding: 2.2rem 1.8rem;
   text-align: center;
-  border: none;
+  border: 1px solid rgba(245, 240, 232, 0.08);
   border-top: 3px solid var(--dorado);
+  backdrop-filter: blur(8px);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -327,7 +408,8 @@ input:focus, textarea:focus, select:focus {
 
 .benefit-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(26, 58, 30, 0.08);
+  background: rgba(245, 240, 232, 0.08);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
 }
 
 .benefit-card:hover::before {
@@ -351,7 +433,7 @@ input:focus, textarea:focus, select:focus {
   font-family: 'Libre Baskerville', serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--verde-selva);
+  color: var(--crema);
   margin-bottom: 0.6rem;
   letter-spacing: 0.02em;
 }
@@ -359,8 +441,7 @@ input:focus, textarea:focus, select:focus {
 .benefit-card p {
   font-size: 0.88rem;
   line-height: 1.6;
-  color: var(--texto-suave);
-  opacity: 0.88;
+  color: rgba(245, 240, 232, 0.75);
 }
 
 @media (max-width: 1024px) {
@@ -381,14 +462,10 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
-/* ─── REVEAL ANIMATIONS ────────────────────────────────── */
+/* ─── REVEAL ANIMATIONS ──────────────────────────────────
+   Estado inicial/animado controlado por GSAP ScrollTrigger
+   (ver src/hooks/useInView.js). Sin JS, el contenido queda
+   visible por defecto (progressive enhancement). */
 .reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
+  will-change: transform, opacity;
 }

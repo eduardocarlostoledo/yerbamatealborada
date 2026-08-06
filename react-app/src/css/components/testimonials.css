@@ -1,6 +1,12 @@
-/* ─── TESTIMONIALS ────────────────────────────────────── */
+/* ─── TESTIMONIALS ─────────────────────────────────────────────
+   Selectores prefijados con #testimonials: el componente Testimonial.jsx
+   (singular, usado en /products) define clases con el mismo nombre
+   (.testimonial-text, .testimonials-grid, .testimonial-author) en
+   testimonial.css, y como Vite empaqueta todo el CSS en un solo bundle
+   global, sin el prefijo esas reglas colisionan según el orden de
+   import — necesitamos especificidad determinística, no orden. */
 #testimonials {
-  background: var(--crema-oscura);
+  background: var(--verde-mate);
   padding: 6rem 5% 7rem;
   position: relative;
   overflow: hidden;
@@ -14,29 +20,31 @@
   font-family: 'Playfair Display', serif;
   font-size: 30rem;
   font-weight: 900;
-  color: rgba(200, 146, 26, 0.04);
+  color: rgba(200, 146, 26, 0.07);
   line-height: 1;
   pointer-events: none;
 }
 
-.testimonials-grid {
+#testimonials .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 4rem;
 }
 
-.testimonial-card {
-  background: var(--blanco);
+#testimonials .testimonial-card {
+  background: rgba(245, 240, 232, 0.05);
+  border: 1px solid rgba(245, 240, 232, 0.08);
   border-radius: 6px;
   padding: 2.2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   position: relative;
   transition: all 0.3s ease;
   border-top: 3px solid transparent;
 }
 
-.testimonial-card::before {
+#testimonials .testimonial-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -47,37 +55,38 @@
   border-radius: 6px 6px 0 0;
 }
 
-.testimonial-card:hover {
+#testimonials .testimonial-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  background: rgba(245, 240, 232, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
 }
 
-.stars {
+#testimonials .stars {
   color: var(--dorado-claro);
   font-size: 1.1rem;
   margin-bottom: 1.2rem;
   letter-spacing: 0.15em;
 }
 
-.testimonial-text {
+#testimonials .testimonial-text {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
   font-size: 0.96rem;
   line-height: 1.75;
-  color: var(--texto);
+  color: var(--crema);
   margin-bottom: 1.6rem;
   opacity: 0.92;
 }
 
-.testimonial-author {
+#testimonials .testimonial-author {
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-top: 1px solid var(--crema-oscura);
+  border-top: 1px solid rgba(245, 240, 232, 0.12);
   padding-top: 1.2rem;
 }
 
-.author-avatar {
+#testimonials .author-avatar {
   width: 48px;
   height: 48px;
   background: linear-gradient(135deg, var(--verde-selva), var(--verde-mate));
@@ -93,22 +102,22 @@
   box-shadow: 0 2px 8px rgba(26, 58, 30, 0.2);
 }
 
-.author-name {
+#testimonials .author-name {
   font-size: 0.92rem;
   font-weight: 650;
-  color: var(--verde-selva);
+  color: var(--dorado-claro);
   letter-spacing: 0.01em;
 }
 
-.author-role {
+#testimonials .author-role {
   font-size: 0.8rem;
-  color: var(--texto-suave);
-  opacity: 0.8;
+  color: rgba(245, 240, 232, 0.6);
 }
 
-.testimonial-featured {
+#testimonials .testimonial-featured {
   grid-column: span 3;
-  background: linear-gradient(135deg, var(--verde-selva) 0%, rgba(26, 58, 30, 0.95) 100%);
+  background: linear-gradient(135deg, var(--verde-selva) 0%, rgba(14, 26, 15, 0.97) 100%);
+  border: 1px solid rgba(200, 146, 26, 0.2);
   color: var(--crema);
   border-radius: 6px;
   padding: 3rem;
@@ -116,20 +125,20 @@
   gap: 3.5rem;
   align-items: center;
   margin-top: 3rem;
-  box-shadow: 0 16px 48px rgba(26, 58, 30, 0.2);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
 }
 
-.testimonial-featured .testimonial-text {
+#testimonials .testimonial-featured .testimonial-text {
   color: rgba(245, 240, 232, 0.88);
   font-size: 1.1rem;
   opacity: 1;
 }
 
-.testimonial-featured .author-name {
+#testimonials .testimonial-featured .author-name {
   color: var(--dorado-claro);
 }
 
-.featured-label {
+#testimonials .featured-label {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -143,7 +152,7 @@
   text-align: center;
 }
 
-.featured-label .big-num {
+#testimonials .featured-label .big-num {
   font-family: 'Playfair Display', serif;
   font-size: 3.2rem;
   font-weight: 900;
@@ -151,7 +160,7 @@
   line-height: 0.9;
 }
 
-.featured-label span {
+#testimonials .featured-label span {
   font-size: 0.78rem;
   color: rgba(245, 240, 232, 0.62);
   text-align: center;
@@ -160,12 +169,12 @@
 }
 
 @media (max-width: 1024px) {
-  .testimonials-grid {
+  #testimonials .testimonials-grid {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
 
-  .testimonial-featured {
+  #testimonials .testimonial-featured {
     grid-column: span 2;
     flex-direction: column;
     text-align: center;
@@ -173,27 +182,16 @@
 }
 
 @media (max-width: 768px) {
-  .testimonials-grid {
+  #testimonials .testimonials-grid {
     grid-template-columns: 1fr;
   }
 
-  .testimonial-featured {
+  #testimonials .testimonial-featured {
     grid-column: span 1;
   }
 
   #testimonials {
     padding: 4rem 5% 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .testimonial-featured {
-    grid-column: span 1;
-    flex-direction: column;
   }
 
   #testimonials::before {

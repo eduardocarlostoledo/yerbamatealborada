@@ -1,0 +1,34 @@
+/* ─── TERRAIN DIVIDER — transición Hero → TrustBar ──────── */
+.terrain-divider {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background: var(--verde-selva);
+}
+
+.terrain-divider-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.terrain-divider-glow {
+  animation: terrainGlowDrift 14s ease-in-out infinite;
+}
+
+@keyframes terrainGlowDrift {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4%); }
+}
+
+@media (max-width: 768px) {
+  .terrain-divider {
+    height: 90px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terrain-divider-glow {
+    animation: none;
+  }
+}

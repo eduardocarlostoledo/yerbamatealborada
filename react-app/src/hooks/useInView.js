@@ -1,4 +1,8 @@
 import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 /**
  * Hook para animar elementos cuando entran en la vista
@@ -33,25 +37,46 @@ export function useInView() {
 }
 
 /**
- * Inicializa IntersectionObserver para todos los elementos con clase 'reveal'
- * Llama una sola vez en App o Layout principal
+ * Anima con GSAP ScrollTrigger todos los elementos con clase 'reveal':
+ * entran con profundidad real (translateZ + perspectiva), no solo fade.
+ * Llamar una sola vez en App/Layout principal, después de montar el DOM.
  */
 export function initRevealAnimations() {
-  if (!document) return
+  if (typeof document === 'undefined') return
 
-  const reveals = document.querySelectorAll('.reveal')
-  if (reveals.length === 0) return
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const reveals = document.querySelectorAll('.reveal:not([data-reveal-bound])')
+  if (!reveals.length) return
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible')
-        }
-      })
-    },
-    { threshold: 0.1, rootMargin: '0px 0px -100px 0px' }
-  )
+  reveals.forEach((el) => {
+    el.setAttribute('data-reveal-bound', '1')
 
-  reveals.forEach((reveal) => observer.observe(reveal))
+    if (reduceMotion) {
+      gsap.set(el, { opacity: 1, clearProps: 'transform' })
+      return
+    }
+
+    gsap.set(el, {
+      opacity: 0,
+      y: 46,
+      z: -120,
+      transformPerspective: 900,
+      transformOrigin: '50% 100%',
+    })
+
+    ScrollTrigger.create({
+      trigger: el,
+      start: 'top 88%',
+      once: true,
+      onEnter: () => {
+        gsap.to(el, {
+          opacity: 1,
+          y: 0,
+          z: 0,
+          duration: 1,
+          ease: 'power3.out',
+        })
+      },
+    })
+  })
 }

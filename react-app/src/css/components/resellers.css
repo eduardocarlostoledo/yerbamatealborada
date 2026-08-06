@@ -1,7 +1,23 @@
 /* ─── RESELLERS ───────────────────────────────────────── */
 #resellers {
-  background: var(--blanco);
+  background: var(--verde-selva);
   padding: 6rem 5% 7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#resellers::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 50% 60% at 100% 100%, rgba(200, 146, 26, 0.1) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+#resellers .reveal,
+#resellers .resellers-grid {
+  position: relative;
+  z-index: 1;
 }
 
 .resellers-grid {
@@ -12,10 +28,11 @@
 }
 
 .reseller-card {
-  background: white;
-  border: 1px solid var(--crema-oscura);
+  background: rgba(245, 240, 232, 0.045);
+  border: 1px solid rgba(245, 240, 232, 0.1);
   border-radius: 6px;
   padding: 2.2rem 2rem;
+  backdrop-filter: blur(8px);
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,7 +55,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top right, rgba(26, 58, 30, 0.05), transparent 100%);
+  background: radial-gradient(circle at top right, rgba(200, 146, 26, 0.09), transparent 100%);
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
@@ -47,7 +64,8 @@
 .reseller-card:hover {
   border-color: var(--verde-claro);
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(26, 58, 30, 0.08);
+  background: rgba(245, 240, 232, 0.075);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
 }
 
 .reseller-card:hover::before {
@@ -76,14 +94,14 @@
   display: block;
   width: 2.6rem;
   height: 2.6rem;
-  color: var(--verde-selva);
+  color: var(--dorado-claro);
 }
 
 .reseller-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--verde-selva);
+  color: var(--crema);
   margin-bottom: 1rem;
   letter-spacing: 0.01em;
 }
@@ -97,12 +115,11 @@
 
 .reseller-card ul li {
   font-size: 0.87rem;
-  color: var(--texto-suave);
+  color: rgba(245, 240, 232, 0.72);
   line-height: 1.6;
   display: flex;
   gap: 0.6rem;
   align-items: flex-start;
-  opacity: 0.88;
 }
 
 .reseller-card ul li::before {

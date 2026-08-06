@@ -2,14 +2,13 @@ import React, { useRef, useCallback } from 'react'
 import ProductCardEffect from '../three/ProductCardEffect.js'
 import isMobile from '../three/utils/isMobile.js'
 import webglSupport from '../three/utils/webglSupport.js'
-import '../css/components/product-card.css'
 
-export default function ProductCard({ title, text, image }) {
+export default function TiltCard({ children, className = '', sparkle = true }) {
   const cardRef = useRef(null)
   const canvasRef = useRef(null)
   const effectRef = useRef(null)
   const mobile = isMobile()
-  const showEffect = !mobile && webglSupport()
+  const showEffect = sparkle && !mobile && webglSupport()
 
   const handleMouseMove = useCallback((e) => {
     if (mobile) return
@@ -18,7 +17,7 @@ export default function ProductCard({ title, text, image }) {
     const rect = card.getBoundingClientRect()
     const x = (e.clientX - rect.left) / rect.width - 0.5
     const y = (e.clientY - rect.top) / rect.height - 0.5
-    card.style.transform = `perspective(600px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateY(-4px)`
+    card.style.transform = `perspective(700px) rotateY(${x * 7}deg) rotateX(${-y * 7}deg) translateY(-6px) translateZ(10px)`
   }, [mobile])
 
   const handleMouseEnter = useCallback(() => {
@@ -32,33 +31,22 @@ export default function ProductCard({ title, text, image }) {
   }, [showEffect])
 
   const handleMouseLeave = useCallback(() => {
-    if (cardRef.current) {
-      cardRef.current.style.transform = ''
-    }
+    if (cardRef.current) cardRef.current.style.transform = ''
     effectRef.current?.stop()
   }, [])
 
   return (
     <div
       ref={cardRef}
-      className="product-card"
+      className={`tilt-card ${className}`}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {showEffect && (
-        <canvas
-          ref={canvasRef}
-          className="product-card-fx"
-          width={300}
-          height={250}
-        />
+        <canvas ref={canvasRef} className="tilt-card-fx" width={300} height={250} />
       )}
-      <img src={image} alt={title} className="product-image" />
-      <div className="product-content">
-        <h3>{title}</h3>
-        <p>{text}</p>
-      </div>
+      <div className="tilt-card-content">{children}</div>
     </div>
   )
 }

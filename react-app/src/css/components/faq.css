@@ -1,6 +1,6 @@
 /* ─── FAQ ─────────────────────────────────────────────── */
 #faq {
-  background: var(--crema);
+  background: var(--verde-mate);
   padding: 6rem 5% 7rem;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .faq-item {
-  border-bottom: 1px solid rgba(26, 58, 30, 0.08);
+  border-bottom: 1px solid rgba(245, 240, 232, 0.1);
   border-left: 3px solid transparent;
   padding-left: 1.2rem;
   transition: all 0.25s ease;
@@ -18,7 +18,7 @@
 
 .faq-item.open {
   border-left-color: var(--dorado);
-  background: rgba(200, 146, 26, 0.03);
+  background: rgba(200, 146, 26, 0.06);
   margin-left: -1.2rem;
   padding-left: 2.4rem;
 }
@@ -35,7 +35,7 @@
   font-family: 'Libre Baskerville', serif;
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--verde-selva);
+  color: var(--crema);
   text-align: left;
   transition: color 0.25s;
 }
@@ -70,9 +70,8 @@
 .faq-answer p {
   font-size: 0.95rem;
   line-height: 1.75;
-  color: var(--texto-suave);
+  color: rgba(245, 240, 232, 0.72);
   padding-bottom: 1.2rem;
-  opacity: 0.88;
 }
 
 @media (max-width: 768px) {

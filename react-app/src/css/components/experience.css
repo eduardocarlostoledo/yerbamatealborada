@@ -1,0 +1,143 @@
+/* ─── LA EXPERIENCIA — scroll horizontal ────────────────── */
+.experience {
+  position: relative;
+  overflow: hidden;
+  background: var(--verde-selva);
+}
+
+.experience-track {
+  display: flex;
+  height: 100vh;
+  will-change: transform;
+}
+
+.experience-panel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.experience-panel-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.experience-panel-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(100deg, rgba(6, 14, 8, 0.94) 0%, rgba(6, 14, 8, 0.72) 32%, rgba(6, 14, 8, 0.28) 58%, rgba(6, 14, 8, 0.1) 100%),
+    linear-gradient(0deg, rgba(4, 10, 6, 0.55) 0%, transparent 40%);
+}
+
+.experience-panel--1 .experience-panel-scrim {
+  background: linear-gradient(100deg, rgba(8, 18, 10, 0.95) 0%, rgba(8, 18, 10, 0.74) 32%, rgba(20, 45, 22, 0.3) 58%, rgba(20, 45, 22, 0.08) 100%),
+    linear-gradient(0deg, rgba(4, 10, 6, 0.55) 0%, transparent 40%);
+}
+
+.experience-panel--2 .experience-panel-scrim {
+  background: linear-gradient(100deg, rgba(20, 13, 6, 0.95) 0%, rgba(20, 13, 6, 0.75) 32%, rgba(60, 38, 14, 0.32) 58%, rgba(60, 38, 14, 0.08) 100%),
+    linear-gradient(0deg, rgba(4, 10, 6, 0.55) 0%, transparent 40%);
+}
+
+.experience-panel--3 .experience-panel-scrim {
+  background: linear-gradient(100deg, rgba(7, 16, 9, 0.95) 0%, rgba(7, 16, 9, 0.75) 32%, rgba(14, 30, 16, 0.32) 58%, rgba(14, 30, 16, 0.08) 100%),
+    linear-gradient(0deg, rgba(4, 10, 6, 0.55) 0%, transparent 40%);
+}
+
+.experience-panel--4 .experience-panel-scrim {
+  background: linear-gradient(100deg, rgba(20, 14, 4, 0.95) 0%, rgba(20, 14, 4, 0.72) 32%, rgba(90, 58, 12, 0.3) 58%, rgba(90, 58, 12, 0.08) 100%),
+    linear-gradient(0deg, rgba(4, 10, 6, 0.55) 0%, transparent 40%);
+}
+
+.experience-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: repeating-linear-gradient(
+    115deg,
+    rgba(245, 240, 232, 0.02) 0 2px,
+    transparent 2px 40px
+  );
+  pointer-events: none;
+}
+
+.experience-panel-content {
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+  padding: 0 8%;
+  text-align: left;
+}
+
+.experience-tag {
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--dorado-claro);
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.experience-panel-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  color: var(--crema);
+  margin-bottom: 1.2rem;
+  line-height: 1.1;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.experience-panel-content p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(245, 240, 232, 0.85);
+  max-width: 460px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 899px) {
+  .experience-track {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .experience-panel {
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+    padding: 4.5rem 0;
+  }
+
+  .experience-panel-content {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 370px) {
+  .experience-panel {
+    min-height: 50vh;
+    padding: 3rem 0;
+  }
+
+  .experience-tag {
+    font-size: 0.68rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .experience-panel-content p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+}
