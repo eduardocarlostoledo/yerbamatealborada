@@ -164,6 +164,21 @@ export default function Hero({ onReady }) {
           <span className="hero-origin-dot" />
           <span>Elaborada en Misiones, Argentina</span>
         </div>
+
+        <div className="hero-photo-medals" aria-hidden="true">
+          <div className="hero-photo-medal">
+            <span className="hero-photo-medal-num">100%</span>
+            <span className="hero-photo-medal-label">Origen Misiones</span>
+          </div>
+          <div className="hero-photo-medal">
+            <span className="hero-photo-medal-num">Con Palo</span>
+            <span className="hero-photo-medal-label">Sabor auténtico</span>
+          </div>
+          <div className="hero-photo-medal">
+            <span className="hero-photo-medal-num">★ 5/5</span>
+            <span className="hero-photo-medal-label">Clientes satisfechos</span>
+          </div>
+        </div>
       </div>
 
       <div className="hero-scroll-cue" aria-hidden="true">
